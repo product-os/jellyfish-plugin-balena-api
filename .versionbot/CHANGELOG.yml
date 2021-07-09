@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update internal-patch'
+      hash: 7f74ea35198d6cd2caaa0d644bc95ea4889d00d5
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.0.1
+  date: 2021-07-09T02:50:50.181Z
+- commits:
     - subject: 'Add code, convert to TypeScript'
       hash: 205a328acb8185b380937dbeeb8af913f8d35c0e
       body: ''
