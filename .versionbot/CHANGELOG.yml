@@ -1,4 +1,17 @@
 - commits:
+    - subject: Fix rate limit retry logic
+      hash: c456fb06f0bf99114eb991840d272884c372883c
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 1.0.2
+  date: 2021-07-09T12:02:39.917Z
+- commits:
     - subject: 'patch: Update internal-patch'
       hash: 7f74ea35198d6cd2caaa0d644bc95ea4889d00d5
       body: ''
