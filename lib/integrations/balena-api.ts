@@ -19,6 +19,7 @@ import { v4 as uuidv4 } from 'uuid';
 import * as utils from './utils';
 
 const SLUG = 'balena-api';
+const RATE_LIMIT_CODE = 429;
 
 const logger = getLogger(__filename);
 const integration = defaultEnvironment.integration['balena-api'];
@@ -651,13 +652,19 @@ module.exports.whoami = async (
 					});
 				})
 				.catch((error) => {
+					if (error.response && error.response.status === RATE_LIMIT_CODE) {
+						return resolve({
+							code: error.response.status,
+							body: error.response.data || '',
+						});
+					}
 					return reject(error);
 				});
 		},
 	);
 
 	// Take rate limiting into account
-	if (statusCode === 429 && retries > 0) {
+	if (statusCode === RATE_LIMIT_CODE && retries > 0) {
 		await Bluebird.delay(5000);
 		return module.exports.whoami(credentials, context, options, retries - 1);
 	}
