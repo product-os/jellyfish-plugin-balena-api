@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update internal-patch'
+      hash: e0eb9d4a6b7dbbeab209651d3b21fdc10cd162b2
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.0.3
+  date: 2021-07-10T01:31:12.821Z
+- commits:
     - subject: Fix rate limit retry logic
       hash: c456fb06f0bf99114eb991840d272884c372883c
       body: ''
