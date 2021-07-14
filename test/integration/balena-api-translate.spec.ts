@@ -7,6 +7,7 @@
 
 import ActionLibrary from '@balena/jellyfish-action-library';
 import { defaultEnvironment } from '@balena/jellyfish-environment';
+import { DefaultPlugin } from '@balena/jellyfish-plugin-default';
 import { syncIntegrationScenario } from '@balena/jellyfish-test-harness';
 import * as jwt from 'jsonwebtoken';
 import * as jose from 'node-jose';
@@ -16,7 +17,6 @@ import { BalenaAPIPlugin } from '../../lib';
 import webhooks from './webhooks/balena-api';
 
 const url = require('native-url');
-const DefaultPlugin = require('@balena/jellyfish-plugin-default');
 
 const TOKEN = defaultEnvironment.integration['balena-api'];
 
