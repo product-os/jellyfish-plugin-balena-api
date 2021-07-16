@@ -26,7 +26,7 @@ export class BalenaAPIPlugin extends JellyfishPluginBase {
 				},
 				{
 					slug: 'jellyfish-plugin-default',
-					version: '>=18.x',
+					version: '>=19.x',
 				},
 			],
 		});
