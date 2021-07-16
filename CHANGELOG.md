@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.15 - 2021-07-16
+
+* Bump jellyfish-plugin-default to v19.0.0 [Josh Bowling]
+
 ## 1.0.14 - 2021-07-14
 
 * patch: Update internal-patch [Renovate Bot]

@@ -1,4 +1,17 @@
 - commits:
+    - subject: Bump jellyfish-plugin-default to v19.0.0
+      hash: 2e20c83885dc59f040e492a30fc102ed0c00a4dd
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 1.0.15
+  date: 2021-07-16T00:33:55.290Z
+- commits:
     - subject: 'patch: Update internal-patch'
       hash: 1205773e8920fa4c9052849b1163f8a4e9583906
       body: ''
