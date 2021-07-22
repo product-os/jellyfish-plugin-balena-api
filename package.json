@@ -48,7 +48,7 @@
     "@balena/jellyfish-assert": "^1.1.66",
     "@balena/jellyfish-environment": "^4.3.18",
     "@balena/jellyfish-logger": "^3.0.54",
-    "@balena/jellyfish-plugin-base": "^2.1.203",
+    "@balena/jellyfish-plugin-base": "^2.1.204",
     "axios": "^0.21.1",
     "bluebird": "^3.7.2",
     "geoip-lite": "^1.4.2",
