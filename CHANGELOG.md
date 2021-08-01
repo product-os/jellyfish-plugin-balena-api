@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.27 - 2021-08-01
+
+* patch: Update dependency typedoc to ^0.21.5 [Renovate Bot]
+
 ## 1.0.26 - 2021-07-31
 
 * 🔄 Synced file(s) with product-os/jellyfish-config [jellyfish-bot]
