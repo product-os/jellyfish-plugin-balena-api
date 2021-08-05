@@ -4,6 +4,11 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.30 - 2021-08-05
+
+* Update test command in README [Josh Bowling]
+* use balena convention for npm script names [Martin Rauscher]
+
 ## 1.0.29 - 2021-08-05
 
 * patch: Update internal-patch [Renovate Bot]
