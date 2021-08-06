@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update internal-patch'
+      hash: c80f9f0bc84c838b112fa53a7b36ebfca8f9ed79
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.0.32
+  date: 2021-08-06T14:44:59.226Z
+- commits:
     - subject: 'Add compose up command, more test docs'
       hash: bcf62fdd65388cc4d909666e92f4b5db4c2f4e74
       body: ''
