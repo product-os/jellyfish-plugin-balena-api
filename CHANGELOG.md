@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.31 - 2021-08-06
+
+* Add compose up command, more test docs [Josh Bowling]
+
 ## 1.0.30 - 2021-08-05
 
 * Update test command in README [Josh Bowling]
