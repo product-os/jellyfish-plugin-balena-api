@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.45 - 2021-08-15
+
+* patch: Update dependency @balena/jellyfish-sync to ^6.1.3 [Renovate Bot]
+
 ## 1.0.44 - 2021-08-15
 
 * patch: Update dependency @balena/jellyfish-environment to ^4.4.0 [Renovate Bot]
