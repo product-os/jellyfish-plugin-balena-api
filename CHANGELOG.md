@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.49 - 2021-08-16
+
+* patch: Update internal-patch [Renovate Bot]
+
 ## 1.0.48 - 2021-08-15
 
 * patch: Update dependency @types/jest to v27 [Renovate Bot]
