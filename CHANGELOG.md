@@ -4,6 +4,11 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.54 - 2021-08-20
+
+* Update files to use secrets [Josh Bowling]
+* 🔄 Synced file(s) with product-os/secrets [joshbwlng]
+
 ## 1.0.53 - 2021-08-19
 
 * patch: Update dependency @balena/jellyfish-environment to v5 [Renovate Bot]
