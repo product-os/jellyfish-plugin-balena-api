@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.53 - 2021-08-19
+
+* patch: Update dependency @balena/jellyfish-environment to v5 [Renovate Bot]
+
 ## 1.0.52 - 2021-08-18
 
 * patch: Update dependency @balena/jellyfish-action-library to ^15.1.2 [Renovate Bot]
