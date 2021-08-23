@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.56 - 2021-08-23
+
+* Fix sut image name on local test [Josh Bowling]
+
 ## 1.0.55 - 2021-08-23
 
 * Add new secrets to gitignore [Josh Bowling]

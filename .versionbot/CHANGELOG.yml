@@ -1,4 +1,17 @@
 - commits:
+    - subject: Fix sut image name on local test
+      hash: 54cfc3e762f70620512588150d0b82942c9072e5
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 1.0.56
+  date: 2021-08-23T08:17:20.531Z
+- commits:
     - subject: Add new secrets to gitignore
       hash: 696cfc1ad194cbdf15806d9e886c7cd795a595b1
       body: ''
