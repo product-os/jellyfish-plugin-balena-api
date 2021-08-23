@@ -1,4 +1,25 @@
 - commits:
+    - subject: Add new secrets to gitignore
+      hash: 696cfc1ad194cbdf15806d9e886c7cd795a595b1
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: "\U0001F504 Synced file(s) with product-os/secrets"
+      hash: 7a015f779269956431ebb0dfc2c963289a594571
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: joshbwlng
+      nested: []
+  version: 1.0.55
+  date: 2021-08-23T07:56:29.789Z
+- commits:
     - subject: Update files to use secrets
       hash: 87e0db38c85ad5e02299d1378677a5af4263d961
       body: ''
