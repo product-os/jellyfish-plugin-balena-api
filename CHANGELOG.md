@@ -4,6 +4,11 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.57 - 2021-08-24
+
+* Add flowdock secrets to gitignore [Josh Bowling]
+* 🔄 Synced file(s) with product-os/secrets [joshbwlng]
+
 ## 1.0.56 - 2021-08-23
 
 * Fix sut image name on local test [Josh Bowling]

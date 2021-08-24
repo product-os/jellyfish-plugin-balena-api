@@ -1,4 +1,25 @@
 - commits:
+    - subject: Add flowdock secrets to gitignore
+      hash: ee8954d4847a9a70293b41ad201fb6c376827529
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: "\U0001F504 Synced file(s) with product-os/secrets"
+      hash: 5d04647598eb6e43ef21401a84a6595078bc674a
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: joshbwlng
+      nested: []
+  version: 1.0.57
+  date: 2021-08-24T03:08:49.208Z
+- commits:
     - subject: Fix sut image name on local test
       hash: 54cfc3e762f70620512588150d0b82942c9072e5
       body: ''
