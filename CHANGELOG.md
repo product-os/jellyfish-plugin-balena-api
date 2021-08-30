@@ -4,6 +4,12 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.59 - 2021-08-30
+
+* Give any type to caught errors [Josh Bowling]
+* Ignore decrypted Front and Intercom secrets [Josh Bowling]
+* 🔄 Synced file(s) with product-os/secrets [joshbwlng]
+
 ## 1.0.58 - 2021-08-24
 
 * Add github secrets to gitignore [Josh Bowling]
