@@ -615,7 +615,7 @@ module.exports.isEventValid = async (
 
 	try {
 		await decryptPayload(token, rawEvent);
-	} catch (error) {
+	} catch (error: any) {
 		logger.exception(
 			context,
 			'Balena-API Translate: failed to decrypt payload when checking if event is valid',
