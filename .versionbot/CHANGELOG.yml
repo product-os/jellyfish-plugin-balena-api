@@ -1,4 +1,16 @@
 - commits:
+    - subject: 'patch: Update dependency @balena/jellyfish-plugin-default to ^19.9.0'
+      hash: 1af8fb79bb840514e291a9113d6acd3750a912d7
+      body: |
+        Update @balena/jellyfish-plugin-default from 19.7.5 to 19.9.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.0.61
+  date: 2021-08-31T07:15:00.399Z
+- commits:
     - subject: Ignore decrypted Discourse secrets
       hash: 40e26aa3772fec67953ff054584b4b9505d6dcf8
       body: ''
