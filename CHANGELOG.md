@@ -4,6 +4,11 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.60 - 2021-08-31
+
+* Ignore decrypted Discourse secrets [Josh Bowling]
+* 🔄 Synced file(s) with product-os/secrets [joshbwlng]
+
 ## 1.0.59 - 2021-08-30
 
 * Give any type to caught errors [Josh Bowling]
