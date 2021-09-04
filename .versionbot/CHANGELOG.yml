@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency axios to ^0.21.2'
+      hash: 559346d5c55d56f3359f11a4aa12957eb9bf3433
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.0.69
+  date: 2021-09-04T10:50:29.967Z
+- commits:
     - subject: 'patch: Update external-non-major'
       hash: 558b3df1a940cb0cb4fc9e181ce9e186efbb7d8d
       body: ''
