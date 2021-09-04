@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.70 - 2021-09-04
+
+* patch: Update dependency @balena/jellyfish-types to v1 [Renovate Bot]
+
 ## 1.0.69 - 2021-09-04
 
 * patch: Update dependency axios to ^0.21.2 [Renovate Bot]

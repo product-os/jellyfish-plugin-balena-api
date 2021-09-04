@@ -1,4 +1,16 @@
 - commits:
+    - subject: 'patch: Update dependency @balena/jellyfish-types to v1'
+      hash: 8250209a686349774e6395c5fd7741bf1791f25a
+      body: |
+        Update @balena/jellyfish-types from 0.9.4 to 1.0.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.0.70
+  date: 2021-09-04T11:02:39.048Z
+- commits:
     - subject: 'patch: Update dependency axios to ^0.21.2'
       hash: 559346d5c55d56f3359f11a4aa12957eb9bf3433
       body: ''
