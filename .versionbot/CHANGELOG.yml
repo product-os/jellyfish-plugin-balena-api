@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency axios to ^0.21.3'
+      hash: 3641b66ebb8ace9d7a85dc1d085eef95a8fd9105
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.0.71
+  date: 2021-09-04T19:50:49.474Z
+- commits:
     - subject: 'patch: Update dependency @balena/jellyfish-types to v1'
       hash: 8250209a686349774e6395c5fd7741bf1791f25a
       body: |
