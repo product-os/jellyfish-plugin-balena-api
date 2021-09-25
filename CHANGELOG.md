@@ -4,6 +4,11 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.78 - 2021-09-25
+
+* Ignore decrypted mailgun and meet secrets [Josh Bowling]
+* 🔄 Synced file(s) with product-os/secrets [joshbwlng]
+
 ## 1.0.77 - 2021-09-15
 
 * 🔄 Synced file(s) with product-os/secrets [joshbwlng]
