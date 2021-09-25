@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.79 - 2021-09-25
+
+* patch: Update dependency @balena/jellyfish-types to ^1.2.1 [Renovate Bot]
+
 ## 1.0.78 - 2021-09-25
 
 * Ignore decrypted mailgun and meet secrets [Josh Bowling]

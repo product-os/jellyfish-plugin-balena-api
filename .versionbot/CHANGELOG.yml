@@ -1,4 +1,16 @@
 - commits:
+    - subject: 'patch: Update dependency @balena/jellyfish-types to ^1.2.1'
+      hash: db22a7834a30dfb0447ba8cd52414e961ed85ddd
+      body: |
+        Update @balena/jellyfish-types from 1.1.0 to 1.2.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.0.79
+  date: 2021-09-25T13:13:52.073Z
+- commits:
     - subject: Ignore decrypted mailgun and meet secrets
       hash: ff30082254d8feaf1606ff2727311806c7d42c3a
       body: ''
