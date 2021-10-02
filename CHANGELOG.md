@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.89 - 2021-10-02
+
+* patch: Update external-non-major [Renovate Bot]
+
 ## 1.0.88 - 2021-09-26
 
 * Add typedoc to depcheck ignore list [Josh Bowling]

@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update external-non-major'
+      hash: 955f7e473af6970007ee24d3b08d017f7327d046
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.0.89
+  date: 2021-10-02T00:39:28.554Z
+- commits:
     - subject: Add typedoc to depcheck ignore list
       hash: 0d361ec76323e2c49deb721574c7c67096f464bc
       body: ''
