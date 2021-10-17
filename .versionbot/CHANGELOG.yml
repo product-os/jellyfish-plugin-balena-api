@@ -1,4 +1,15 @@
 - commits:
+    - subject: "\U0001F504 Synced file(s) with product-os/secrets"
+      hash: fecb409a34fd6a6f899a48138f9cf6bf6e08a436
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: joshbwlng
+      nested: []
+  version: 1.0.95
+  date: 2021-10-15T08:58:07.968Z
+- commits:
     - subject: 'Update test:compose to match image name'
       hash: 712d44977918b6ba7920233e92a642171cea0497
       body: ''
