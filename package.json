@@ -48,9 +48,9 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@balena/jellyfish-assert": "^1.1.68",
-    "@balena/jellyfish-environment": "^5.0.4",
+    "@balena/jellyfish-environment": "^5.0.5",
     "@balena/jellyfish-logger": "^3.0.86",
-    "@balena/jellyfish-plugin-base": "^2.1.244",
+    "@balena/jellyfish-plugin-base": "^2.1.246",
     "axios": "^0.23.0",
     "bluebird": "^3.7.2",
     "geoip-lite": "^1.4.2",
