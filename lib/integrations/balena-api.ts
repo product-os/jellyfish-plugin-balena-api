@@ -581,6 +581,20 @@ module.exports = class BalenaAPIIntegration implements Integration {
 			makeCard(newCard, actor, _.get(newCard, ['data', 'translateDate'])),
 		);
 
+		if (resourceType === 'user' && payload.type === 'create') {
+			sequence.push(
+				makeCard(
+					{
+						type: 'balena-account@1.0.0',
+						slug: `balena-account-${payload.payload.username}`,
+						data: payload.payload,
+					},
+					actor,
+					_.get(newCard, ['data', 'translateDate']),
+				),
+			);
+		}
+
 		this.context.log.info(
 			'Balena-API Translate: Translating Balena API updates',
 			{

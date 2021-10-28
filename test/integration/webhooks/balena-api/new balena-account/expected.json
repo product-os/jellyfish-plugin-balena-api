@@ -1,0 +1,56 @@
+{
+  "head": {
+    "slug": "balena-account-johndoe",
+    "type": "balena-account@1.0.0",
+    "version": "1.0.0",
+    "active": true,
+    "loop": null,
+    "tags": [],
+    "requires": [],
+    "capabilities": [],
+    "data": {
+      "id": 999,
+      "username": "johndoe",
+      "company": "Souvlaki Tek",
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "johndoe@souvlakitek.com",
+      "account_type": "professional"
+    }
+  },
+  "tail": [
+    {
+      "type": "create@1.0.0",
+      "active": true,
+      "loop": null,
+      "version": "1.0.0",
+      "tags": [],
+      "requires": [],
+      "capabilities": [],
+      "data": {
+        "actor": {
+          "active": true,
+          "slug": "user-admin"
+        },
+        "timestamp": "2019-04-17T15:24:08.731Z",
+        "payload": {
+          "type": "balena-account@1.0.0",
+          "version": "1.0.0",
+          "active": true,
+          "tags": [],
+          "requires": [],
+          "capabilities": [],
+          "data": {
+            "id": 999,
+            "username": "johndoe",
+            "company": "Souvlaki Tek",
+            "first_name": "John",
+            "last_name": "Doe",
+            "email": "johndoe@souvlakitek.com",
+            "account_type": "professional"
+          }
+        }
+      }
+    }
+  ]
+}

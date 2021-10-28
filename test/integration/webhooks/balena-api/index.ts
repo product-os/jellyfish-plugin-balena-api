@@ -77,4 +77,8 @@ export default {
 		expected: require('./new-user-no-last-name/expected.json'),
 		steps: [require('./new-user-no-last-name/01.json')],
 	},
+	'new-balena-account': {
+		expected: require('./new-balena-account/expected.json'),
+		steps: [require('./new-balena-account/01.json')],
+	},
 };
