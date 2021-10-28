@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update internal-patch'
+      hash: adf52fda65759ff43ee15361a5ded4c490ba207c
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.0.113
+  date: 2021-10-28T04:49:41.164Z
+- commits:
     - subject: 'patch: Update dependency @balena/jellycheck to ^0.1.4'
       hash: 43f50e90e58b5d94e20029641d887511ecc3f914
       body: ''
