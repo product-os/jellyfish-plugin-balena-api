@@ -1,4 +1,15 @@
 - commits:
+    - subject: "\U0001F504 Synced file(s) with product-os/secrets"
+      hash: 24488b1e6fd58fdb6734721877ffc4cf852579a7
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: joshbwlng
+      nested: []
+  version: 1.0.121
+  date: 2021-10-30T10:10:18.168Z
+- commits:
     - subject: 'patch: Update dependency @balena/jellyfish-plugin-base to ^2.1.259'
       hash: 04b02763eb28a673082d6762345340dd2240118e
       body: ''
