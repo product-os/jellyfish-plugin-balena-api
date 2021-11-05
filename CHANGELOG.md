@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.122 - 2021-11-05
+
+* patch: Update dependency @balena/jellyfish-core to v8 [Renovate Bot]
+
 ## 1.0.121 - 2021-10-30
 
 * 🔄 Synced file(s) with product-os/secrets [joshbwlng]
