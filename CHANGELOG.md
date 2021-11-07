@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.129 - 2021-11-07
+
+* patch: Update resinci/jellyfish-test Docker tag to v1.4.12 [Renovate Bot]
+
 ## 1.0.128 - 2021-11-07
 
 * patch: Update dependency @balena/jellyfish-logger to ^3.0.103 [Renovate Bot]
