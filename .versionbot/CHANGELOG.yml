@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency @balena/jellyfish-assert to ^1.1.71'
+      hash: 3a7470eb60ab4c0bc31777cd9d0f04b689a8b5d0
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.0.131
+  date: 2021-11-11T01:06:34.970Z
+- commits:
     - subject: 'patch: Update internal-patch'
       hash: 47f323252019abb938bdf26eaf71857dd41894ec
       body: ''
