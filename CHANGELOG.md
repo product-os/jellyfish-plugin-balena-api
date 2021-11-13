@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.135 - 2021-11-13
+
+* patch: Update internal-patch [Renovate Bot]
+
 ## 1.0.134 - 2021-11-13
 
 * patch: Update dependency nock to ^13.2.1 [Renovate Bot]
