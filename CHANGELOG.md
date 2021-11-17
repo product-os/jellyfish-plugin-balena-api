@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.146 - 2021-11-17
+
+* 🔄 Synced file(s) with product-os/secrets [joshbwlng]
+
 ## 1.0.145 - 2021-11-17
 
 * patch: Update dependency lint-staged to v12 [Renovate Bot]
