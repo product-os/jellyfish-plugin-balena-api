@@ -1,10 +1,16 @@
 version: '3'
 
 env:
+  INTEGRATION_BALENA_API_APP_ID:
+    sh: cat /run/secrets/integration_balena_api_app_id
+  INTEGRATION_BALENA_API_APP_SECRET:
+    sh: cat /run/secrets/integration_balena_api_app_secret
   INTEGRATION_BALENA_API_PRIVATE_KEY:
     sh: cat /run/secrets/integration_balena_api_private_key
   INTEGRATION_BALENA_API_PUBLIC_KEY_PRODUCTION:
     sh: cat /run/secrets/integration_balena_api_public_key_production
+  INTEGRATION_BALENA_API_PUBLIC_KEY_STAGING:
+    sh: cat /run/secrets/integration_balena_api_public_key_staging
 
 tasks:
   test:
