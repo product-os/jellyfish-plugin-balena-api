@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency lint-staged to v12'
+      hash: a418971bf3e75f1159e8e1e3cf4dbe7840634ad6
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.0.145
+  date: 2021-11-17T04:43:26.466Z
+- commits:
     - subject: 'Remove secret from test:compose script'
       hash: dcf451fb7614fb07961b881f747dca330ed3aa4a
       body: ''
