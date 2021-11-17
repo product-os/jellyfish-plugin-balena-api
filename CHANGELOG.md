@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.144 - 2021-11-17
+
+* Remove secret from test:compose script [Josh Bowling]
+
 ## 1.0.143 - 2021-11-17
 
 * Set license [Josh Bowling]
