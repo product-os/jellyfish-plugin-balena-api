@@ -1,4 +1,17 @@
 - commits:
+    - subject: Set license
+      hash: f8607e9b32ac887f98c600797f10a33c2af13ac3
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 1.0.143
+  date: 2021-11-17T02:37:24.921Z
+- commits:
     - subject: 'patch: Update dependency typedoc to ^0.22.9'
       hash: 22dba759b3103021837fc7c7f42758a11dab4429
       body: ''
