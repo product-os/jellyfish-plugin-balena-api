@@ -4,6 +4,12 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.149 - 2021-11-20
+
+* patch: Update internal-patch [Renovate Bot]
+* patch: Update internal-patch [Renovate Bot]
+* patch: Update dependency @balena/jellycheck to v1 [Renovate Bot]
+
 ## 1.0.148 - 2021-11-19
 
 * patch: Update dependency @balena/jellyfish-core to ^8.1.0 [Renovate Bot]
