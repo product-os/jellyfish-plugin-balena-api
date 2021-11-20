@@ -1,9 +1,3 @@
-/*
- * Copyright (C) Balena.io - All Rights Reserved
- * Unauthorized copying of this file, via any medium is strictly prohibited.
- * Proprietary and confidential.
- */
-
 export default {
 	'new-user-invalid-ip': {
 		expected: require('./new-user-invalid-ip/expected.json'),
