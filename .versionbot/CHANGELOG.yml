@@ -1,4 +1,17 @@
 - commits:
+    - subject: Remove license headers
+      hash: 06b371129fbecb0f26b7cffd07543b38bfdae079
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 1.0.150
+  date: 2021-11-20T13:43:54.051Z
+- commits:
     - subject: 'patch: Update internal-patch'
       hash: 2fada015568128e29cadd53a180a7caf5dfd281e
       body: ''
