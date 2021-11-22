@@ -1,4 +1,23 @@
 - commits:
+    - subject: 'patch: Update dependency @balena/jellyfish-assert to ^1.1.84'
+      hash: 67ef1c178d5b97b9d768ea1a5c9a880c3dfba124
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: 'patch: Update internal-patch'
+      hash: 1d4a8e2a7dd2c77c50131d176b51702d333fb2ee
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.0.151
+  date: 2021-11-22T00:38:11.949Z
+- commits:
     - subject: Remove license headers
       hash: 06b371129fbecb0f26b7cffd07543b38bfdae079
       body: ''

@@ -4,6 +4,11 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.151 - 2021-11-22
+
+* patch: Update dependency @balena/jellyfish-assert to ^1.1.84 [Renovate Bot]
+* patch: Update internal-patch [Renovate Bot]
+
 ## 1.0.150 - 2021-11-20
 
 * Remove license headers [Josh Bowling]
