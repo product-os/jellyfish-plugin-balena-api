@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.152 - 2021-11-22
+
+* Bump external deps [Josh Bowling]
+
 ## 1.0.151 - 2021-11-22
 
 * patch: Update dependency @balena/jellyfish-assert to ^1.1.84 [Renovate Bot]
