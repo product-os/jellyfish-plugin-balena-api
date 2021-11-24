@@ -47,10 +47,10 @@
   "author": "Balena.io. <hello@balena.io>",
   "license": "AGPL-3.0",
   "dependencies": {
-    "@balena/jellyfish-assert": "^1.1.87",
+    "@balena/jellyfish-assert": "^1.1.88",
     "@balena/jellyfish-environment": "^5.1.17",
-    "@balena/jellyfish-logger": "^3.0.138",
-    "@balena/jellyfish-plugin-base": "^2.1.295",
+    "@balena/jellyfish-logger": "^3.0.139",
+    "@balena/jellyfish-plugin-base": "^2.1.296",
     "axios": "^0.24.0",
     "bluebird": "^3.7.2",
     "geoip-lite": "^1.4.2",
