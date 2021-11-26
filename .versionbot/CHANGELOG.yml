@@ -1,4 +1,16 @@
 - commits:
+    - subject: 'patch: Update dependency typescript to ^4.5.2'
+      hash: b492f977d0c06ca704bbad1cd4b8559d3546b911
+      body: |
+        Update typescript from 4.4.4 to 4.5.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.0.164
+  date: 2021-11-25T08:07:34.280Z
+- commits:
     - subject: Remove jellycheck
       hash: 8ba43c4ed2d966d9ef7ad77391ce581d0c24bc24
       body: ''

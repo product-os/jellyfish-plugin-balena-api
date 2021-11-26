@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.164 - 2021-11-25
+
+* patch: Update dependency typescript to ^4.5.2 [Renovate Bot]
+
 ## 1.0.163 - 2021-11-25
 
 * Remove jellycheck [Josh Bowling]
