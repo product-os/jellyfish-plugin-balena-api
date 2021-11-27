@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.168 - 2021-11-27
+
+* patch: Update internal-patch [Renovate Bot]
+
 ## 1.0.167 - 2021-11-27
 
 * patch: Update external-non-major Docker tags [Renovate Bot]
