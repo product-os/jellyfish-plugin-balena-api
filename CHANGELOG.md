@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.167 - 2021-11-27
+
+* patch: Update external-non-major Docker tags [Renovate Bot]
+
 ## 1.0.166 - 2021-11-26
 
 * patch: Update dependency @balena/lint to ^6.2.0 [Renovate Bot]

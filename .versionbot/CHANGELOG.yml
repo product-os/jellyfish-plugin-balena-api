@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update external-non-major Docker tags'
+      hash: cf32f0dcb0cc8c5be0264462e4679a6e2807c430
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.0.167
+  date: 2021-11-27T00:02:55.962Z
+- commits:
     - subject: 'patch: Update dependency @balena/lint to ^6.2.0'
       hash: e8df628fcf160dc4c1b6a584bf49796b62894fd6
       body: |
