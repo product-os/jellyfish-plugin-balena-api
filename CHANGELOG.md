@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.177 - 2021-11-28
+
+* Remove old sync comments [Josh Bowling]
+
 ## 1.0.176 - 2021-11-27
 
 * patch: Update dependency @balena/jellyfish-plugin-base to ^2.1.309 [Renovate Bot]
