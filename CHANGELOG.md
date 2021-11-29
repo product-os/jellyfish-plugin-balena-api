@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.179 - 2021-11-29
+
+* patch: Update dependency @balena/jellyfish-logger to ^3.0.155 [Renovate Bot]
+
 ## 1.0.178 - 2021-11-29
 
 * patch: Update dependency @balena/jellyfish-assert to ^1.1.99 [Renovate Bot]
