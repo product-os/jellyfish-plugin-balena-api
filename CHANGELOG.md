@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.182 - 2021-12-01
+
+* Bump jellyfish-environment to v5.2.0 [Josh Bowling]
+
 ## 1.0.181 - 2021-12-01
 
 * 🔄 Synced file(s) with product-os/secrets [joshbwlng]

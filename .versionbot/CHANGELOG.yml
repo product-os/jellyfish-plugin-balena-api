@@ -1,4 +1,17 @@
 - commits:
+    - subject: Bump jellyfish-environment to v5.2.0
+      hash: 7413fb04e624a7158449c8ab461622f55ef252f7
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 1.0.182
+  date: 2021-12-01T04:30:26.923Z
+- commits:
     - subject: "\U0001F504 Synced file(s) with product-os/secrets"
       hash: 857d8f117abed219fea3ef402944d3b4a4809814
       body: ''
