@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update internal-patch'
+      hash: b1cc113ae8d6f04e6b3e7e1b52091dd84cba402d
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.0.184
+  date: 2021-12-01T12:40:39.221Z
+- commits:
     - subject: Remove old secrets from gitignore
       hash: 659eed4759d22bdbed3097b702b6090d6f171724
       body: ''
