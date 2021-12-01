@@ -10,22 +10,13 @@ services:
       - postgres
       - redis
     secrets:
-      - integration_balena_api_app_id
-      - integration_balena_api_app_secret
       - integration_balena_api_private_key
       - integration_balena_api_public_key_production
-      - integration_balena_api_public_key_staging
     networks:
       - internal
 
 secrets:
-  integration_balena_api_app_id:
-    file: ./.balena/secrets/integration_balena_api_app_id
-  integration_balena_api_app_secret:
-    file: ./.balena/secrets/integration_balena_api_app_secret
   integration_balena_api_private_key:
     file: ./.balena/secrets/integration_balena_api_private_key
   integration_balena_api_public_key_production:
     file: ./.balena/secrets/integration_balena_api_public_key_production
-  integration_balena_api_public_key_staging:
-    file: ./.balena/secrets/integration_balena_api_public_key_staging
