@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.196 - 2021-12-09
+
+* Remove Bluebird [Josh Bowling]
+
 ## 1.0.195 - 2021-12-06
 
 * patch: Update dependency @balena/jellyfish-plugin-base to ^2.1.318 [Renovate Bot]
