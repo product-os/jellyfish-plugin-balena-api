@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update internal-patch'
+      hash: c5a3a4f9f394c8b8db01b7925423627946ddb75a
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.0.197
+  date: 2021-12-09T01:11:47.527Z
+- commits:
     - subject: Remove Bluebird
       hash: e48b149471fdbbe20f9031e704ac3c6b4a840e17
       body: ''
