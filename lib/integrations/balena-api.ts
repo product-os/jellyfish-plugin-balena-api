@@ -3,7 +3,6 @@ import { defaultEnvironment } from '@balena/jellyfish-environment';
 import { getLogger } from '@balena/jellyfish-logger';
 import { Integration } from '@balena/jellyfish-plugin-base';
 import axios from 'axios';
-import Bluebird from 'bluebird';
 import * as geoip from 'geoip-lite';
 import * as jwt from 'jsonwebtoken';
 import _ from 'lodash';
@@ -452,7 +451,7 @@ async function decryptPayload(token: any, payload: any): Promise<any> {
 
 	const verificationKey = Buffer.from(publicKey, 'base64');
 
-	return new Bluebird((resolve, reject) => {
+	return new Promise((resolve, reject) => {
 		jwt.verify(signedToken, verificationKey, (error: any, result: any) => {
 			if (error) {
 				return reject(error);
@@ -474,11 +473,11 @@ module.exports = class BalenaAPIIntegration implements Integration {
 	}
 
 	async initialize() {
-		return Bluebird.resolve();
+		return Promise.resolve();
 	}
 
 	async destroy() {
-		return Bluebird.resolve();
+		return Promise.resolve();
 	}
 
 	async mirror(_card: any, _options: any): Promise<any> {
@@ -631,7 +630,7 @@ module.exports.whoami = async (
 	options: any,
 	retries = 10,
 ): Promise<any> => {
-	const { code: statusCode, body: externalUser } = await new Bluebird(
+	const { code: statusCode, body: externalUser } = await new Promise(
 		(resolve: any, reject: any) => {
 			axios
 				.get(`${module.exports.OAUTH_BASE_URL}/user/v1/whoami`, {
@@ -659,7 +658,9 @@ module.exports.whoami = async (
 
 	// Take rate limiting into account
 	if (statusCode === RATE_LIMIT_CODE && retries > 0) {
-		await Bluebird.delay(5000);
+		await new Promise((resolve) => {
+			setTimeout(resolve, 5000);
+		});
 		return module.exports.whoami(credentials, context, options, retries - 1);
 	}
 
