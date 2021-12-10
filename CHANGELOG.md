@@ -4,6 +4,11 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.198 - 2021-12-10
+
+* patch: Update dependency @balena/jellyfish-plugin-base to ^2.1.321 [Renovate Bot]
+* patch: Update dependency typescript to ^4.5.3 [Renovate Bot]
+
 ## 1.0.197 - 2021-12-09
 
 * patch: Update internal-patch [Renovate Bot]
