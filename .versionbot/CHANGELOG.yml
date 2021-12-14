@@ -1,4 +1,17 @@
 - commits:
+    - subject: 'Drop depcheck, bump typescript'
+      hash: 6c7704b064b75f9d553b4eb55dec43f556a1fe64
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 1.0.203
+  date: 2021-12-14T03:17:19.659Z
+- commits:
     - subject: 'patch: Update dependency @balena/jellyfish-plugin-base to ^2.1.323'
       hash: fbc501010430d94b859d330940c6831ab109c844
       body: ''

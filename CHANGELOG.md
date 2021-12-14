@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.203 - 2021-12-14
+
+* Drop depcheck, bump typescript [Josh Bowling]
+
 ## 1.0.202 - 2021-12-11
 
 * patch: Update dependency @balena/jellyfish-plugin-base to ^2.1.323 [Renovate Bot]
