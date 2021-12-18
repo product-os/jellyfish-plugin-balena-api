@@ -48,7 +48,7 @@
   "dependencies": {
     "@balena/jellyfish-assert": "^1.2.1",
     "@balena/jellyfish-environment": "^6.0.3",
-    "@balena/jellyfish-logger": "^3.1.0",
+    "@balena/jellyfish-logger": "^4.0.3",
     "@balena/jellyfish-plugin-base": "^2.2.4",
     "axios": "^0.24.0",
     "geoip-lite": "^1.4.2",
@@ -61,10 +61,10 @@
   "devDependencies": {
     "@balena/jellyfish-action-library": "^15.1.189",
     "@balena/jellyfish-config": "^2.0.2",
-    "@balena/jellyfish-core": "^8.2.0",
+    "@balena/jellyfish-core": "^8.2.2",
     "@balena/jellyfish-plugin-default": "^21.1.147",
     "@balena/jellyfish-sync": "^6.1.130",
-    "@balena/jellyfish-test-harness": "^8.1.190",
+    "@balena/jellyfish-test-harness": "^8.1.204",
     "@balena/jellyfish-types": "^1.2.39",
     "@balena/lint": "^6.2.0",
     "@types/geoip-lite": "^1.4.1",
@@ -87,7 +87,7 @@
   },
   "peerDependencies": {
     "@balena/jellyfish-action-library": "^15.1.189",
-    "@balena/jellyfish-core": "^8.2.0",
+    "@balena/jellyfish-core": "^8.2.2",
     "@balena/jellyfish-plugin-default": "^21.1.147",
     "@balena/jellyfish-sync": "^6.1.130"
   },
