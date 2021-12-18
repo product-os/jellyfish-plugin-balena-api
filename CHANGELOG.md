@@ -4,6 +4,11 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.213 - 2021-12-18
+
+* Bump core and test-harness [Josh Bowling]
+* patch: Update dependency @balena/jellyfish-logger to v4 [Renovate Bot]
+
 ## 1.0.212 - 2021-12-18
 
 * patch: Update external-non-major [Renovate Bot]
