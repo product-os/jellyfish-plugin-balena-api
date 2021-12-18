@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.214 - 2021-12-18
+
+* patch: Update internal-patch [Renovate Bot]
+
 ## 1.0.213 - 2021-12-18
 
 * Bump core and test-harness [Josh Bowling]

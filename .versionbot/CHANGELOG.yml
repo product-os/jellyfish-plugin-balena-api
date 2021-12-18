@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update internal-patch'
+      hash: 193a7e173c96f37edc0c96bb114a6d3f256a3d0a
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 1.0.214
+  date: 2021-12-18T12:41:22.281Z
+- commits:
     - subject: Bump core and test-harness
       hash: a2cddc3dbcb07807656c254277ce5f6feda60ef1
       body: ''
