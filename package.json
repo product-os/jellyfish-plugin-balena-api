@@ -65,7 +65,7 @@
     "@balena/jellyfish-plugin-default": "^21.2.0",
     "@balena/jellyfish-sync": "^6.2.0",
     "@balena/jellyfish-test-harness": "^8.1.204",
-    "@balena/jellyfish-types": "^1.2.39",
+    "@balena/jellyfish-types": "^2.0.0",
     "@balena/lint": "^6.2.0",
     "@types/geoip-lite": "^1.4.1",
     "@types/jest": "^27.0.3",
