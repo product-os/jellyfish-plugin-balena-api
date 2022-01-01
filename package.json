@@ -47,7 +47,7 @@
   "license": "AGPL-3.0",
   "dependencies": {
     "@balena/jellyfish-assert": "^1.2.4",
-    "@balena/jellyfish-environment": "^6.0.5",
+    "@balena/jellyfish-environment": "^6.0.6",
     "@balena/jellyfish-logger": "^4.0.8",
     "@balena/jellyfish-plugin-base": "^2.2.13",
     "axios": "^0.24.0",
