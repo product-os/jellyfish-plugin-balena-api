@@ -1,6 +1,6 @@
 // tslint:disable: no-var-requires
 
-import ActionLibrary from '@balena/jellyfish-action-library';
+import { ActionLibrary } from '@balena/jellyfish-action-library';
 import { defaultEnvironment } from '@balena/jellyfish-environment';
 import { DefaultPlugin } from '@balena/jellyfish-plugin-default';
 import { syncIntegrationScenario } from '@balena/jellyfish-test-harness';
