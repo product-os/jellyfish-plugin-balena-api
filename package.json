@@ -50,7 +50,7 @@
     "@balena/jellyfish-environment": "^6.0.9",
     "@balena/jellyfish-logger": "^4.0.17",
     "@balena/jellyfish-plugin-base": "^2.2.25",
-    "axios": "^0.24.0",
+    "axios": "^0.25.0",
     "geoip-lite": "^1.4.3",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
