@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.248 - 2022-01-19
+
+* patch: Update dependency axios to ^0.25.0 [Renovate Bot]
+
 ## 1.0.247 - 2022-01-18
 
 * patch: Update resinci/jellyfish-test Docker tag to v1.4.20 [Renovate Bot]
