@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.249 - 2022-01-19
+
+* patch: Update dependency typedoc to ^0.22.11 [Renovate Bot]
+
 ## 1.0.248 - 2022-01-19
 
 * patch: Update dependency axios to ^0.25.0 [Renovate Bot]
