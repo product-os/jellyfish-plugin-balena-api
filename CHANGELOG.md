@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.256 - 2022-01-22
+
+* patch: Update dependency randomstring to ^1.2.2 [Renovate Bot]
+
 ## 1.0.255 - 2022-01-22
 
 * patch: Update dependency @balena/jellyfish-logger to ^4.0.22 [Renovate Bot]
