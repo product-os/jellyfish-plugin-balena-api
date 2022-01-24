@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 1.0.261 - 2022-01-24
+
+* patch: Update internal-non-major [Renovate Bot]
+
 ## 1.0.260 - 2022-01-23
 
 * patch: Update dependency @balena/jellyfish-logger to ^4.0.26 [Renovate Bot]
