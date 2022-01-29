@@ -47,9 +47,9 @@
   "license": "AGPL-3.0",
   "dependencies": {
     "@balena/jellyfish-assert": "^1.2.12",
-    "@balena/jellyfish-environment": "^6.0.13",
+    "@balena/jellyfish-environment": "^6.0.14",
     "@balena/jellyfish-logger": "^4.0.27",
-    "@balena/jellyfish-plugin-base": "^2.2.25",
+    "@balena/jellyfish-plugin-base": "^2.2.26",
     "axios": "^0.25.0",
     "geoip-lite": "^1.4.3",
     "jsonwebtoken": "^8.5.1",
