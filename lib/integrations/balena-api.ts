@@ -1,7 +1,9 @@
 import * as assert from '@balena/jellyfish-assert';
 import { defaultEnvironment } from '@balena/jellyfish-environment';
-import { getLogger } from '@balena/jellyfish-logger';
-import { Integration } from '@balena/jellyfish-plugin-base';
+import { getLogger, LogContext } from '@balena/jellyfish-logger';
+import { Integration, IntegrationDefinition } from '@balena/jellyfish-worker';
+import * as syncErrors from '@balena/jellyfish-worker/build/sync/errors';
+import { SyncActionContext } from '@balena/jellyfish-worker/build/sync/sync-context';
 import axios from 'axios';
 import * as geoip from 'geoip-lite';
 import * as jwt from 'jsonwebtoken';
@@ -462,7 +464,7 @@ async function decryptPayload(token: any, payload: any): Promise<any> {
 	});
 }
 
-module.exports = class BalenaAPIIntegration implements Integration {
+export class BalenaAPIIntegration implements Integration {
 	public slug = SLUG;
 	public context: any;
 	public options: any;
@@ -472,15 +474,11 @@ module.exports = class BalenaAPIIntegration implements Integration {
 		this.context = this.options.context;
 	}
 
-	async initialize() {
+	public async destroy() {
 		return Promise.resolve();
 	}
 
-	async destroy() {
-		return Promise.resolve();
-	}
-
-	async mirror(_card: any, _options: any): Promise<any> {
+	public async mirror(_card: any, _options: any): Promise<any> {
 		return [];
 	}
 
@@ -497,7 +495,7 @@ module.exports = class BalenaAPIIntegration implements Integration {
 	// 			2. If there is an ip attached to the payload use it to retrieve an address and set it on the card
 	// 6. Set Actor of translate event
 	// 7. Build up translate sequence
-	async translate(event: any): Promise<any> {
+	public async translate(event: any): Promise<any> {
 		// 1. Decrypt the event payload
 		this.context.log.info('Balena-API Translate: Decrypt event payload');
 
@@ -590,50 +588,17 @@ module.exports = class BalenaAPIIntegration implements Integration {
 
 		return sequence;
 	}
-};
+}
 
-module.exports.slug = SLUG;
-
-module.exports.mergeCardWithPayload = mergeCardWithPayload;
-
-module.exports.isEventValid = async (
-	token: any,
-	rawEvent: any,
-	_headers: any,
-	context: any,
-): Promise<boolean> => {
-	if (!token) {
-		return false;
-	}
-
-	try {
-		await decryptPayload(token, rawEvent);
-	} catch (error: any) {
-		logger.exception(
-			context,
-			'Balena-API Translate: failed to decrypt payload when checking if event is valid',
-			error,
-		);
-
-		return false;
-	}
-
-	return true;
-};
-
-module.exports.OAUTH_BASE_URL = integration.oauthBaseUrl;
-module.exports.OAUTH_SCOPES = [];
-
-module.exports.whoami = async (
-	context: any,
+const whoami = async (
+	logContext: LogContext,
 	credentials: any,
-	options: any,
 	retries = 10,
 ): Promise<any> => {
 	const { code: statusCode, body: externalUser } = await new Promise(
 		(resolve: any, reject: any) => {
 			axios
-				.get(`${module.exports.OAUTH_BASE_URL}/user/v1/whoami`, {
+				.get(`${integration.oauthBaseUrl}/user/v1/whoami`, {
 					headers: {
 						Authorization: `${credentials.token_type} ${credentials.access_token}`,
 					},
@@ -661,22 +626,26 @@ module.exports.whoami = async (
 		await new Promise((resolve) => {
 			setTimeout(resolve, 5000);
 		});
-		return module.exports.whoami(credentials, context, options, retries - 1);
+		return whoami(logContext, credentials, retries - 1);
 	}
 
 	assert.INTERNAL(
-		context,
+		logContext,
 		externalUser && statusCode === 200,
-		options.errors.SyncExternalRequestError,
+		syncErrors.SyncExternalRequestError,
 		`Failed to fetch user information from balena-api. Response status code: ${statusCode}`,
 	);
 
 	return externalUser;
 };
 
-module.exports.match = (context: any, externalUser: any, options: any): any => {
+const match = (
+	context: SyncActionContext,
+	externalUser: any,
+	options: any,
+): any => {
 	assert.INTERNAL(
-		context,
+		null,
 		externalUser,
 		options.errors.SyncInvalidArg,
 		'External user is a required parameter',
@@ -686,15 +655,14 @@ module.exports.match = (context: any, externalUser: any, options: any): any => {
 	return context.getElementBySlug(slug);
 };
 
-module.exports.getExternalUserSyncEventData = async (
+const getExternalUserSyncEventData = async (
 	context: any,
 	externalUser: any,
-	options: any,
 ): Promise<any> => {
 	assert.INTERNAL(
 		context,
 		externalUser,
-		options.errors.SyncInvalidArg,
+		syncErrors.SyncInvalidArg,
 		'External user is a required parameter',
 	);
 
@@ -743,4 +711,38 @@ module.exports.getExternalUserSyncEventData = async (
 	const result = await cipher.final();
 	event.payload = result;
 	return event;
+};
+
+export const balenaApiIntegrationDefinition: IntegrationDefinition = {
+	initialize: async (options) => new BalenaAPIIntegration(options),
+	isEventValid: async (
+		token: any,
+		rawEvent: any,
+		_headers: any,
+		context: any,
+	): Promise<boolean> => {
+		if (!token) {
+			return false;
+		}
+
+		try {
+			await decryptPayload(token, rawEvent);
+		} catch (error: any) {
+			logger.exception(
+				context,
+				'Balena-API Translate: failed to decrypt payload when checking if event is valid',
+				error,
+			);
+
+			return false;
+		}
+
+		return true;
+	},
+	OAUTH_BASE_URL: integration.oauthBaseUrl,
+	OAUTH_SCOPES: [],
+	whoami,
+	match,
+	getExternalUserSyncEventData,
+	mergeCardWithPayload,
 };

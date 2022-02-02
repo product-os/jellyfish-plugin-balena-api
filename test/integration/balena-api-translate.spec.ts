@@ -1,19 +1,17 @@
-// tslint:disable: no-var-requires
-
-import { ActionLibrary } from '@balena/jellyfish-action-library';
-import { defaultEnvironment } from '@balena/jellyfish-environment';
-import { DefaultPlugin } from '@balena/jellyfish-plugin-default';
-import { syncIntegrationScenario } from '@balena/jellyfish-test-harness';
 import * as jwt from 'jsonwebtoken';
 import * as jose from 'node-jose';
-import * as querystring from 'querystring';
 import * as randomstring from 'randomstring';
-import { BalenaAPIPlugin } from '../../lib';
-import webhooks from './webhooks/balena-api';
-
-const url = require('native-url');
+import { defaultEnvironment } from '@balena/jellyfish-environment';
+import { defaultPlugin } from '@balena/jellyfish-plugin-default';
+import { productOsPlugin } from '@balena/jellyfish-plugin-product-os';
+import { testUtils } from '@balena/jellyfish-worker';
+import path from 'path';
+import _ from 'lodash';
+import { balenaApiPlugin } from '../../lib';
+import webhooks from './webhooks';
 
 const TOKEN = defaultEnvironment.integration['balena-api'];
+let ctx: testUtils.TestContext;
 
 async function prepareEvent(event: any): Promise<any> {
 	const signedToken = jwt.sign(
@@ -49,32 +47,69 @@ async function prepareEvent(event: any): Promise<any> {
 	return event;
 }
 
-syncIntegrationScenario.run(
-	{
-		test,
-		before: beforeAll,
-		beforeEach,
-		after: afterAll,
-		afterEach,
-	},
-	{
-		basePath: __dirname,
-		plugins: [ActionLibrary, DefaultPlugin, BalenaAPIPlugin],
-		cards: [],
-		scenarios: webhooks,
-		baseUrl: defaultEnvironment.integration['balena-api'].oauthBaseUrl,
-		stubRegex: /.*/,
-		source: 'balena-api',
-		prepareEvent,
-		options: {
-			token: TOKEN,
-		},
-		isAuthorized: (self: any, request: any) => {
-			const params = querystring.parse(url.parse(request.path).query);
-			return (
-				params.api_key === self.options.token.api &&
-				params.api_username === self.options.token.username
-			);
-		},
-	},
-);
+beforeAll(async () => {
+	ctx = await testUtils.newContext({
+		plugins: [productOsPlugin(), defaultPlugin(), balenaApiPlugin()],
+	});
+
+	await testUtils.translateBeforeAll(ctx);
+});
+
+afterEach(async () => {
+	await testUtils.translateAfterEach(ctx);
+});
+
+afterAll(() => {
+	return testUtils.destroyContext(ctx);
+});
+
+describe('translate logic works as expected', () => {
+	for (const testCaseName of Object.keys(webhooks)) {
+		const testCase = webhooks[testCaseName];
+		const expected = {
+			head: testCase.expected.head,
+			tail: _.sortBy(testCase.expected.tail, testUtils.tailSort),
+		};
+		for (const variation of testUtils.getVariations(testCase.steps, {
+			permutations: false,
+		})) {
+			if (variation.combination.length !== testCase.steps.length) {
+				continue;
+			}
+
+			test(`(${variation.name}) ${testCaseName}`, async () => {
+				await testUtils.webhookScenario(
+					ctx,
+					{
+						steps: variation.combination,
+						prepareEvent,
+						offset:
+							_.findIndex(testCase.steps, _.first(variation.combination)) + 1,
+						headIndex: testCase.headIndex || 0,
+						original: testCase.steps,
+
+						// Ignore updates from user avatar trigger
+						ignoreUpdateEvents: true,
+
+						expected: _.cloneDeep(expected),
+						name: testCaseName,
+						variant: variation.name,
+					},
+					{
+						source: 'balena-api',
+						baseUrl: defaultEnvironment.integration['balena-api'].oauthBaseUrl,
+						uriPath: /.*/,
+						basePath: path.join(__dirname, 'webhooks'),
+						isAuthorized: (request: any) => {
+							const params = new URL(request.path).searchParams;
+							return (
+								params.get('api_key') === TOKEN.appSecret &&
+								params.get('api_username') === TOKEN.appId
+							);
+						},
+					},
+				);
+			});
+		}
+	}
+});

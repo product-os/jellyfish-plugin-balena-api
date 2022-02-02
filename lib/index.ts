@@ -1,28 +1,25 @@
-import { JellyfishPluginBase } from '@balena/jellyfish-plugin-base';
-import { cards } from './cards';
-import integrations from './integrations';
+import { PluginDefinition } from '@balena/jellyfish-worker';
+import { contracts } from './contracts';
+import { integrations } from './integrations';
+
+// tslint:disable-next-line: no-var-requires
+const { version } = require('../package.json');
 
 /**
  * The Balena API Jellyfish plugin.
  */
-export class BalenaAPIPlugin extends JellyfishPluginBase {
-	constructor() {
-		super({
-			slug: 'jellyfish-plugin-balena-api',
-			name: 'Balena API Plugin',
-			version: '1.0.0',
-			cards,
-			integrations,
-			requires: [
-				{
-					slug: 'action-library',
-					version: '>=15.x',
-				},
-				{
-					slug: 'jellyfish-plugin-default',
-					version: '>=19.x',
-				},
-			],
-		});
-	}
-}
+export const balenaApiPlugin = (): PluginDefinition => {
+	return {
+		slug: 'plugin-balena-api',
+		name: 'Balena API Plugin',
+		version,
+		contracts,
+		integrationMap: integrations,
+		requires: [
+			{
+				slug: 'plugin-default',
+				version: '>=21.x',
+			},
+		],
+	};
+};

@@ -10,7 +10,7 @@
     "requires": [],
     "capabilities": [],
     "data": {
-      "email": "johndoe@souvlakitek.com",
+      "avatar": null,
       "roles": [ "user-external-support" ],
       "hash": "PASSWORDLESS",
       "mirrors": [
@@ -20,7 +20,8 @@
         "type": "professional",
         "company": "Souvlaki Tek",
         "name": {
-          "first": "John"
+          "first": "John",
+          "last": "Doe"
         }
       }
     }
@@ -59,11 +60,39 @@
               "type": "professional",
               "company": "Souvlaki Tek",
               "name": {
-                "first": "John"
+                "first": "John",
+                "last": "Doe"
               }
             }
           }
         }
+      }
+    },
+    {
+      "type": "update@1.0.0",
+      "active": true,
+      "loop": null,
+      "version": "1.0.0",
+      "tags": [],
+      "requires": [],
+      "capabilities": [],
+      "data": {
+        "actor": {
+          "active": true,
+          "slug": "user-admin"
+        },
+        "timestamp": "2019-04-17T15:25:45.231Z",
+        "payload": [
+          {
+            "op": "replace",
+            "path": "/data/translateDate",
+            "value": "2019-04-17T15:25:45.231Z"
+          },
+          {
+            "op": "remove",
+            "path": "/data/email"
+          }
+        ]
       }
     }
   ]

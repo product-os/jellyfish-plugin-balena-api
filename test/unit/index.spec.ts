@@ -1,14 +1,11 @@
-import { cardMixins } from '@balena/jellyfish-core';
-import { BalenaAPIPlugin } from '../../lib';
+import { defaultPlugin } from '@balena/jellyfish-plugin-default';
+import { PluginManager } from '@balena/jellyfish-worker';
+import { balenaApiPlugin } from '../../lib';
 
-const context = {
-	id: 'jellyfish-plugin-balena-api-test',
-};
-
-const plugin = new BalenaAPIPlugin();
+const pluginManager = new PluginManager([defaultPlugin(), balenaApiPlugin()]);
 
 test('Expected cards are loaded', () => {
-	const cards = plugin.getCards(context, cardMixins);
+	const cards = pluginManager.getCards();
 
 	// Sanity check
 	expect(cards['oauth-client-balena-api'].name).toEqual('Balena oauth client');
@@ -18,8 +15,8 @@ test('Expected cards are loaded', () => {
 });
 
 test('Expected integrations are loaded', () => {
-	const integrations = plugin.getSyncIntegrations(context);
+	const integrations = pluginManager.getSyncIntegrations();
 
 	// Sanity check
-	expect(integrations['balena-api'].slug).toEqual('balena-api');
+	expect(Object.keys(integrations).includes('balena-api')).toBeTruthy();
 });

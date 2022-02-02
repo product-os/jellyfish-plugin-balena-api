@@ -10,13 +10,14 @@
     "requires": [],
     "capabilities": [],
     "data": {
+      "avatar": null,
+      "email": "ceo@souvlakitek.com",
       "roles": [ "user-external-support" ],
       "hash": "PASSWORDLESS",
       "mirrors": [
         "https://api.balena-cloud.com/v5/user(999)"
       ],
       "profile": {
-        "type": "professional",
         "company": "Souvlaki Tek",
         "name": {
           "first": "John",
@@ -89,7 +90,12 @@
           },
           {
             "op": "remove",
-            "path": "/data/email"
+            "path": "/data/profile/type"
+          },
+          {
+            "op": "replace",
+            "path": "/data/email",
+            "value": "ceo@souvlakitek.com"
           }
         ]
       }

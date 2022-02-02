@@ -1,7 +1,7 @@
 {
   "head": {
-    "name": "johndoe",
-    "slug": "user-johndoe",
+    "name": "test_54%-Johndoe",
+    "slug": "user-test-54-johndoe",
     "type": "user@1.0.0",
     "version": "1.0.0",
     "active": true,
@@ -10,6 +10,7 @@
     "requires": [],
     "capabilities": [],
     "data": {
+      "avatar": null,
       "email": "johndoe@souvlakitek.com",
       "roles": [ "user-external-support" ],
       "hash": "PASSWORDLESS",
@@ -18,6 +19,7 @@
       ],
       "profile": {
         "type": "professional",
+        "company": "Souvlaki Tek",
         "name": {
           "first": "John",
           "last": "Doe"
@@ -41,12 +43,12 @@
         },
         "timestamp": "2019-04-17T15:24:08.731Z",
         "payload": {
+          "name": "test_54%-Johndoe",
           "type": "user@1.0.0",
           "version": "1.0.0",
           "active": true,
           "tags": [],
           "requires": [],
-          "name": "johndoe",
           "capabilities": [],
           "data": {
             "email": "johndoe@souvlakitek.com",
@@ -65,33 +67,6 @@
             }
           }
         }
-      }
-    },
-    {
-      "type": "update@1.0.0",
-      "active": true,
-      "loop": null,
-      "version": "1.0.0",
-      "tags": [],
-      "requires": [],
-      "capabilities": [],
-      "data": {
-        "actor": {
-          "active": true,
-          "slug": "user-admin"
-        },
-        "timestamp": "2019-04-17T15:25:45.231Z",
-        "payload": [
-          {
-            "op": "replace",
-            "path": "/data/translateDate",
-            "value": "2019-04-17T15:25:45.231Z"
-          },
-          {
-            "op": "remove",
-            "path": "/data/profile/company"
-          }
-        ]
       }
     }
   ]

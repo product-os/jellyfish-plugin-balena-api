@@ -1,14 +1,16 @@
-import * as errors from '@balena/jellyfish-sync/build/errors';
 import nock from 'nock';
 import * as jose from 'node-jose';
 import * as jwt from 'jsonwebtoken';
 import * as randomstring from 'randomstring';
 import { v4 as uuidv4 } from 'uuid';
+import { PluginManager } from '@balena/jellyfish-worker';
+import { defaultPlugin } from '@balena/jellyfish-plugin-default';
+import { balenaApiPlugin } from '../../../lib';
 
-// tslint:disable-next-line: no-var-requires
-const BalenaAPI = require('../../../lib/integrations/balena-api');
+const pluginManager = new PluginManager([defaultPlugin(), balenaApiPlugin()]);
+const balenaApiIntegration = pluginManager.getSyncIntegrations()['balena-api'];
 
-const context: any = {
+const logContext: any = {
 	id: 'jellyfish-plugin-balena-api-test',
 };
 
@@ -60,7 +62,7 @@ describe('whoami()', () => {
 			email: 'foo@bar.baz',
 		};
 
-		nock(BalenaAPI.OAUTH_BASE_URL, {
+		nock(balenaApiIntegration.OAUTH_BASE_URL!, {
 			reqheaders: {
 				Authorization: `${credentials.token_type} ${credentials.access_token}`,
 			},
@@ -68,9 +70,7 @@ describe('whoami()', () => {
 			.get('/user/v1/whoami')
 			.reply(200, response);
 
-		const result = await BalenaAPI.whoami(context, credentials, {
-			errors,
-		});
+		const result = await balenaApiIntegration.whoami!(logContext, credentials);
 		expect(result).toEqual(response);
 
 		nock.cleanAll();
@@ -79,8 +79,9 @@ describe('whoami()', () => {
 
 describe('isEventValid()', () => {
 	test('should return false given Balena API and invalid JSON', async () => {
-		const result = await BalenaAPI.isEventValid(
+		const result = await balenaApiIntegration.isEventValid(
 			{
+				id: uuidv4(),
 				api: 'xxxxx',
 				production: {
 					publicKey: TEST_BALENA_API_PUBLIC_KEY,
@@ -91,15 +92,16 @@ describe('isEventValid()', () => {
 			{
 				'content-type': 'application/jose',
 			},
-			context,
+			logContext,
 		);
 
 		expect(result).toBe(false);
 	});
 
 	test('should return false given Balena API and invalid payload', async () => {
-		const result = await BalenaAPI.isEventValid(
+		const result = await balenaApiIntegration.isEventValid(
 			{
+				id: uuidv4(),
 				api: 'xxxxx',
 				production: {
 					publicKey: TEST_BALENA_API_PUBLIC_KEY,
@@ -110,7 +112,7 @@ describe('isEventValid()', () => {
 			{
 				'content-type': 'application/jose',
 			},
-			context,
+			logContext,
 		);
 
 		expect(result).toBe(false);
@@ -122,8 +124,9 @@ describe('isEventValid()', () => {
 			foo: 'bar',
 		});
 
-		const result = await BalenaAPI.isEventValid(
+		const result = await balenaApiIntegration.isEventValid(
 			{
+				id: uuidv4(),
 				api: 'xxxxx',
 				production: {
 					publicKey: TEST_BALENA_API_PUBLIC_KEY,
@@ -134,7 +137,7 @@ describe('isEventValid()', () => {
 			{
 				'content-type': 'application/jose',
 			},
-			context,
+			logContext,
 		);
 
 		expect(result).toBe(true);
@@ -146,8 +149,9 @@ describe('isEventValid()', () => {
 			foo: 'bar',
 		});
 
-		const result = await BalenaAPI.isEventValid(
+		const result = await balenaApiIntegration.isEventValid(
 			{
+				id: uuidv4(),
 				api: 'xxxxx',
 				privateKey: TEST_BALENA_API_PRIVATE_KEY,
 			},
@@ -155,7 +159,7 @@ describe('isEventValid()', () => {
 			{
 				'content-type': 'application/jose',
 			},
-			context,
+			logContext,
 		);
 
 		expect(result).toBe(false);
@@ -167,8 +171,9 @@ describe('isEventValid()', () => {
 			foo: 'bar',
 		});
 
-		const result = await BalenaAPI.isEventValid(
+		const result = await balenaApiIntegration.isEventValid(
 			{
+				id: uuidv4(),
 				api: 'xxxxx',
 				production: {
 					publicKey: TEST_BALENA_API_PUBLIC_KEY,
@@ -178,7 +183,7 @@ describe('isEventValid()', () => {
 			{
 				'content-type': 'application/jose',
 			},
-			context,
+			logContext,
 		);
 
 		expect(result).toBe(false);
@@ -225,7 +230,7 @@ describe('mergeCardWithPayload()', () => {
 			name: 'newusername',
 		};
 
-		const result = await BalenaAPI.mergeCardWithPayload(
+		const result = await balenaApiIntegration.mergeCardWithPayload!(
 			undefined,
 			payload,
 			'user',
@@ -271,7 +276,7 @@ describe('mergeCardWithPayload()', () => {
 		};
 
 		// eslint-disable-next-line no-undefined, no-undef
-		const result = await BalenaAPI.mergeCardWithPayload(
+		const result = await balenaApiIntegration.mergeCardWithPayload!(
 			undefined,
 			payload,
 			'organization',
@@ -338,7 +343,7 @@ describe('mergeCardWithPayload()', () => {
 		};
 
 		// eslint-disable-next-line no-undefined, no-undef
-		const result = await BalenaAPI.mergeCardWithPayload(
+		const result = await balenaApiIntegration.mergeCardWithPayload!(
 			undefined,
 			payload,
 			'organization',
@@ -424,7 +429,7 @@ describe('mergeCardWithPayload()', () => {
 		};
 
 		// eslint-disable-next-line no-undefined, no-undef
-		const result = await BalenaAPI.mergeCardWithPayload(
+		const result = await balenaApiIntegration.mergeCardWithPayload!(
 			undefined,
 			payload,
 			'organization',
