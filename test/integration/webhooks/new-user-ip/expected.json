@@ -1,7 +1,7 @@
 {
   "head": {
-    "name": "test_54%-Johndoe",
-    "slug": "user-test-54-johndoe",
+    "name": "johndoe",
+    "slug": "user-johndoe",
     "type": "user@1.0.0",
     "version": "1.0.0",
     "active": true,
@@ -10,6 +10,7 @@
     "requires": [],
     "capabilities": [],
     "data": {
+      "avatar": null,
       "email": "johndoe@souvlakitek.com",
       "roles": [ "user-external-support" ],
       "hash": "PASSWORDLESS",
@@ -19,6 +20,8 @@
       "profile": {
         "type": "professional",
         "company": "Souvlaki Tek",
+        "city": "Oxford",
+        "country": "GB",
         "name": {
           "first": "John",
           "last": "Doe"
@@ -42,7 +45,7 @@
         },
         "timestamp": "2019-04-17T15:24:08.731Z",
         "payload": {
-          "name": "test_54%-Johndoe",
+          "name": "johndoe",
           "type": "user@1.0.0",
           "version": "1.0.0",
           "active": true,
@@ -59,6 +62,8 @@
             "profile": {
               "type": "professional",
               "company": "Souvlaki Tek",
+              "city": "Oxford",
+              "country": "GB",
               "name": {
                 "first": "John",
                 "last": "Doe"

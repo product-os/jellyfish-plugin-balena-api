@@ -10,6 +10,7 @@
     "requires": [],
     "capabilities": [],
     "data": {
+      "avatar": null,
       "email": "johndoe@souvlakitek.com",
       "roles": [ "user-external-support" ],
       "hash": "PASSWORDLESS",
@@ -19,8 +20,6 @@
       "profile": {
         "type": "professional",
         "company": "Souvlaki Tek",
-        "city": "Oxford",
-        "country": "GB",
         "name": {
           "first": "John",
           "last": "Doe"
@@ -61,8 +60,6 @@
             "profile": {
               "type": "professional",
               "company": "Souvlaki Tek",
-              "city": "Oxford",
-              "country": "GB",
               "name": {
                 "first": "John",
                 "last": "Doe"

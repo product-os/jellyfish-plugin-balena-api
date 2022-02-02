@@ -10,6 +10,7 @@
     "requires": [],
     "capabilities": [],
     "data": {
+      "avatar": null,
       "email": "johndoe@souvlakitek.com",
       "roles": [ "user-external-support" ],
       "hash": "PASSWORDLESS",
