@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update worker to v18
+      hash: 44191facc117cca044c0f9690b0aa51912d36af1
+      body: ""
+      footer:
+        Change-type: major
+        change-type: major
+      author: karaxuna
+      nested: []
+  version: 2.0.0
+  title: Use latest worker
+  date: 2022-02-02T10:05:07.863Z
+- commits:
     - subject: Update resinci/jellyfish-test Docker tag to v1.4.22
       hash: b1ffc452de9bfd469d076dc02e3cde9648763a4a
       body: ""
