@@ -1,4 +1,18 @@
 - commits:
+    - subject: Drop peer dependencies
+      hash: 99689bedd99916ee356f80ac3b7e6594952f2e8d
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 2.0.3
+  title: Drop peer dependencies
+  date: 2022-02-03T04:22:01.812Z
+- commits:
     - subject: Update @balena/jellyfish-plugin-default from 23.0.0 to 23.1.1
       hash: 48abdc047fc6b21c29ebf4e8f1df0e180b000c7a
       body: ""
