@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 2.0.4 - 2022-02-04
+
+* Update @balena/jellyfish-worker from 18.3.0 to 18.4.1 [Renovate Bot]
+
 ## 2.0.3 - 2022-02-03
 
 * Drop peer dependencies [Josh Bowling]
