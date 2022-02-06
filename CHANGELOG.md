@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 2.0.9 - 2022-02-06
+
+* Update internal-patch [Renovate Bot]
+
 ## 2.0.8 - 2022-02-06
 
 * Optimize postgres for tests, minor fixes [Josh Bowling]

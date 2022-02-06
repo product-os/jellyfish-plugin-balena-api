@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update internal-patch
+      hash: aaaa97317126549dd37ec7a0c55ebb5249c41830
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.0.9
+  title: "'Update internal-patch'"
+  date: 2022-02-06T13:24:17.901Z
+- commits:
     - subject: Optimize postgres for tests, minor fixes
       hash: dc15a995afcbf226d0dd243bd747df454ab752e8
       body: ""
