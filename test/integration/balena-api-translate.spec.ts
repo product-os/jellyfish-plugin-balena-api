@@ -1,12 +1,12 @@
-import * as jwt from 'jsonwebtoken';
-import * as jose from 'node-jose';
-import * as randomstring from 'randomstring';
 import { defaultEnvironment } from '@balena/jellyfish-environment';
 import { defaultPlugin } from '@balena/jellyfish-plugin-default';
 import { productOsPlugin } from '@balena/jellyfish-plugin-product-os';
 import { testUtils } from '@balena/jellyfish-worker';
-import path from 'path';
+import * as jwt from 'jsonwebtoken';
 import _ from 'lodash';
+import * as jose from 'node-jose';
+import path from 'path';
+import * as randomstring from 'randomstring';
 import { balenaApiPlugin } from '../../lib';
 import webhooks from './webhooks';
 
@@ -28,6 +28,9 @@ async function prepareEvent(event: any): Promise<any> {
 			subject: `${event.payload.id}`,
 		},
 	);
+
+	// TODO: Improve translate test suite/protocol to avoid this
+	ctx.worker.setTriggers(ctx.logContext, []);
 
 	const keyValue = Buffer.from(TOKEN.production.publicKey, 'base64');
 	const encryptionKey = await jose.JWK.asKey(keyValue, 'pem');
@@ -60,10 +63,11 @@ afterEach(async () => {
 });
 
 afterAll(() => {
+	testUtils.translateAfterAll();
 	return testUtils.destroyContext(ctx);
 });
 
-describe('translate logic works as expected', () => {
+describe('translate', () => {
 	for (const testCaseName of Object.keys(webhooks)) {
 		const testCase = webhooks[testCaseName];
 		const expected = {
@@ -71,12 +75,8 @@ describe('translate logic works as expected', () => {
 			tail: _.sortBy(testCase.expected.tail, testUtils.tailSort),
 		};
 		for (const variation of testUtils.getVariations(testCase.steps, {
-			permutations: false,
+			permutations: true,
 		})) {
-			if (variation.combination.length !== testCase.steps.length) {
-				continue;
-			}
-
 			test(`(${variation.name}) ${testCaseName}`, async () => {
 				await testUtils.webhookScenario(
 					ctx,
