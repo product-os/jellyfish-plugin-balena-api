@@ -639,15 +639,11 @@ const whoami = async (
 	return externalUser;
 };
 
-const match = (
-	context: SyncActionContext,
-	externalUser: any,
-	options: any,
-): any => {
+const match = (context: SyncActionContext, externalUser: any): any => {
 	assert.INTERNAL(
 		null,
 		externalUser,
-		options.errors.SyncInvalidArg,
+		syncErrors.SyncInvalidArg,
 		'External user is a required parameter',
 	);
 
