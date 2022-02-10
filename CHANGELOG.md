@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 2.0.12 - 2022-02-10
+
+* Use exported error directly [Carol Schulze]
+
 ## 2.0.11 - 2022-02-09
 
 * Update resinci/jellyfish-test Docker tag to v1.4.24 [Renovate Bot]

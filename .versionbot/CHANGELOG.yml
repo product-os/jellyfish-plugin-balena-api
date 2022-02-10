@@ -1,4 +1,18 @@
 - commits:
+    - subject: Use exported error directly
+      hash: 6b48a66e9233db06f568da467a0afec43fdeff31
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Carol Schulze <carol@ereski.org>
+        signed-off-by: Carol Schulze <carol@ereski.org>
+      author: Carol Schulze
+      nested: []
+  version: 2.0.12
+  title: "'Use exported error directly'"
+  date: 2022-02-10T19:07:24.398Z
+- commits:
     - subject: Update resinci/jellyfish-test Docker tag to v1.4.24
       hash: 4766e03ba1a44e2ed54be554ca01c2514f73ff71
       body: ""
