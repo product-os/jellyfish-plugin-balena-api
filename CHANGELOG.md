@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 2.0.13 - 2022-02-12
+
+* Update internal-patch [Renovate Bot]
+
 ## 2.0.12 - 2022-02-10
 
 * Use exported error directly [Carol Schulze]
