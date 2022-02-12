@@ -712,10 +712,10 @@ const getExternalUserSyncEventData = async (
 export const balenaApiIntegrationDefinition: IntegrationDefinition = {
 	initialize: async (options) => new BalenaAPIIntegration(options),
 	isEventValid: async (
-		token: any,
-		rawEvent: any,
-		_headers: any,
-		context: any,
+		context,
+		token,
+		rawEvent,
+		_headers,
 	): Promise<boolean> => {
 		if (!token) {
 			return false;
