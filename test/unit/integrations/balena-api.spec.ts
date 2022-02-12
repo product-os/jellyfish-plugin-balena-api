@@ -80,6 +80,7 @@ describe('whoami()', () => {
 describe('isEventValid()', () => {
 	test('should return false given Balena API and invalid JSON', async () => {
 		const result = await balenaApiIntegration.isEventValid(
+			logContext,
 			{
 				id: uuidv4(),
 				api: 'xxxxx',
@@ -92,7 +93,6 @@ describe('isEventValid()', () => {
 			{
 				'content-type': 'application/jose',
 			},
-			logContext,
 		);
 
 		expect(result).toBe(false);
@@ -100,6 +100,7 @@ describe('isEventValid()', () => {
 
 	test('should return false given Balena API and invalid payload', async () => {
 		const result = await balenaApiIntegration.isEventValid(
+			logContext,
 			{
 				id: uuidv4(),
 				api: 'xxxxx',
@@ -112,7 +113,6 @@ describe('isEventValid()', () => {
 			{
 				'content-type': 'application/jose',
 			},
-			logContext,
 		);
 
 		expect(result).toBe(false);
@@ -125,6 +125,7 @@ describe('isEventValid()', () => {
 		});
 
 		const result = await balenaApiIntegration.isEventValid(
+			logContext,
 			{
 				id: uuidv4(),
 				api: 'xxxxx',
@@ -137,7 +138,6 @@ describe('isEventValid()', () => {
 			{
 				'content-type': 'application/jose',
 			},
-			logContext,
 		);
 
 		expect(result).toBe(true);
@@ -150,6 +150,7 @@ describe('isEventValid()', () => {
 		});
 
 		const result = await balenaApiIntegration.isEventValid(
+			logContext,
 			{
 				id: uuidv4(),
 				api: 'xxxxx',
@@ -159,7 +160,6 @@ describe('isEventValid()', () => {
 			{
 				'content-type': 'application/jose',
 			},
-			logContext,
 		);
 
 		expect(result).toBe(false);
@@ -172,6 +172,7 @@ describe('isEventValid()', () => {
 		});
 
 		const result = await balenaApiIntegration.isEventValid(
+			logContext,
 			{
 				id: uuidv4(),
 				api: 'xxxxx',
@@ -183,7 +184,6 @@ describe('isEventValid()', () => {
 			{
 				'content-type': 'application/jose',
 			},
-			logContext,
 		);
 
 		expect(result).toBe(false);
