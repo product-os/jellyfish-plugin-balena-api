@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 2.0.15 - 2022-02-12
+
+* Fix isEventValid arguments order [karaxuna]
+
 ## 2.0.14 - 2022-02-12
 
 * Update resinci/jellyfish-test Docker tag to v1.4.25 [Renovate Bot]

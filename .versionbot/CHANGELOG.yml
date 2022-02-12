@@ -1,4 +1,16 @@
 - commits:
+    - subject: Fix isEventValid arguments order
+      hash: ca697c67a5da4364fd6c1cfb875cdb094df94639
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: karaxuna
+      nested: []
+  version: 2.0.15
+  title: "'Fix isEventValid arguments order'"
+  date: 2022-02-12T20:50:20.571Z
+- commits:
     - subject: Update resinci/jellyfish-test Docker tag to v1.4.25
       hash: f87bbaecfb40bc331a20555a5ec09d521de42d06
       body: ""
