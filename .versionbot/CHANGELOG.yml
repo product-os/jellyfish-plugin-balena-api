@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update external-non-major
+      hash: 5323d77cb842327f87ac36051d22fd59d8fa3f91
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.0.16
+  title: "'Update external-non-major'"
+  date: 2022-02-13T18:32:25.203Z
+- commits:
     - subject: Fix isEventValid arguments order
       hash: ca697c67a5da4364fd6c1cfb875cdb094df94639
       body: ""

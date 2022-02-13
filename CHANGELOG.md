@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 2.0.16 - 2022-02-13
+
+* Update external-non-major [Renovate Bot]
+
 ## 2.0.15 - 2022-02-12
 
 * Fix isEventValid arguments order [karaxuna]
