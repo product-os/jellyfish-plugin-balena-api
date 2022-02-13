@@ -718,12 +718,16 @@ export const balenaApiIntegrationDefinition: IntegrationDefinition = {
 		_headers,
 	): Promise<boolean> => {
 		if (!token) {
+			console.log('no token, returning');
+
 			return false;
 		}
 
 		try {
 			await decryptPayload(token, rawEvent);
 		} catch (error: any) {
+			console.log('failed to decrypt payload');
+			console.error(error);
 			logger.exception(
 				context,
 				'Balena-API Translate: failed to decrypt payload when checking if event is valid',
