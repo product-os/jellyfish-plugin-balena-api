@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update dependencies (external v0 minor bumps)
+      hash: d72a7230ef36bd584edff46db69abb0155cfa5f1
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.0.20
+  title: "'Update dependencies (external v0 minor bumps)'"
+  date: 2022-02-15T01:12:00.757Z
+- commits:
     - subject: Update resinci/jellyfish-test from v1.4.25 to v1.4.26
       hash: cab30c9afdc736cbeb250b98615e808b48f4475c
       body: ""
