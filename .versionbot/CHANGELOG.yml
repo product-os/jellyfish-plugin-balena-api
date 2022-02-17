@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update internal-patch
+      hash: 9602c2b4911f2378158eb9489d1d5e091359c769
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.0.26
+  title: "'Update internal-patch'"
+  date: 2022-02-17T04:14:32.471Z
+- commits:
     - subject: Update @balena/jellyfish-environment from 6.1.1 to 7.0.0
       hash: 733f229cce1e2ac43a00d73be7b7766c941c54ac
       body: ""
