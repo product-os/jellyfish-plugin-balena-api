@@ -1,4 +1,18 @@
 - commits:
+    - subject: Remove old secrets
+      hash: 1848a4f36a94ed23bc0d37cf83b0557273b2ad04
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 2.0.29
+  title: "'Remove old secrets'"
+  date: 2022-02-18T01:32:57.927Z
+- commits:
     - subject: 🔄 Synced file(s) with product-os/secrets
       hash: eba8bf7812d1f046c0029434a05e40a6d4e26768
       body: ""
