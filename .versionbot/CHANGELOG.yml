@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update internal-patch
+      hash: 83542fda8884767358768a069ffcea44a571af74
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.0.31
+  title: "'Update internal-patch'"
+  date: 2022-02-20T06:48:53.145Z
+- commits:
     - subject: Update typedoc from 0.22.11 to 0.22.12
       hash: 3874345202ba0e8491bffc6cea819278e8876e88
       body: ""
