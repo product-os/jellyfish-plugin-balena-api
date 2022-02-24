@@ -2,6 +2,7 @@ import { defaultEnvironment } from '@balena/jellyfish-environment';
 import { defaultPlugin } from '@balena/jellyfish-plugin-default';
 import { productOsPlugin } from '@balena/jellyfish-plugin-product-os';
 import { testUtils } from '@balena/jellyfish-worker';
+import { strict as assert } from 'assert';
 import * as jwt from 'jsonwebtoken';
 import _ from 'lodash';
 import * as jose from 'node-jose';
@@ -65,6 +66,70 @@ afterEach(async () => {
 afterAll(() => {
 	testUtils.translateAfterAll();
 	return testUtils.destroyContext(ctx);
+});
+
+describe.only('tmp', () => {
+	test('skhema check', async () => {
+		// Insert new account contract to match production
+		const inserted = await ctx.worker.insertCard(
+			ctx.logContext,
+			ctx.session,
+			ctx.worker.typeContracts['account@1.0.0'],
+			{
+				reason: null,
+				attachEvents: true,
+				actor: ctx.adminUserId,
+			},
+			{
+				data: {
+					plan: 'Free',
+					origin: 'external-event-123295c0-ca15-40ba-95c2-0a8e12094f97@1.0.0',
+					mirrors: [],
+					username: 'gh_foobar23',
+					annualPrice: 0,
+					billingCode: 'free',
+					billingCycle: 'monthly',
+					canSelfsServer: true,
+					monthlyPrice: 0,
+					startsOnDate: '2022-02-23T22:49:05.345Z',
+					translateDate: '2022-02-23T22:49:07.091Z',
+					SumAnnualPrice: 0,
+					SumMonthlyPrice: 0,
+					discountPercentage: 0,
+					isAgreedUponOnDate: '2022-02-23T22:49:05.345Z',
+				},
+			},
+		);
+		assert(inserted);
+		console.log('inserted:', JSON.stringify(inserted, null, 4));
+
+		// Attempt to perform failing patch
+		const patched = await ctx.worker.patchCard(
+			ctx.logContext,
+			ctx.session,
+			ctx.worker.typeContracts['account@1.0.0'],
+			{
+				reason: null,
+				attachEvents: true,
+				actor: ctx.adminUserId,
+			},
+			inserted,
+			[
+				{
+					op: 'replace',
+					path: '/data/translateDate',
+					value: '2022-02-23T23:15:05.957Z',
+				},
+				{
+					op: 'replace',
+					path: '/data/origin',
+					value: 'external-event-788ce7f2-9054-46a2-9f39-d07382622864@1.0.0',
+				},
+			],
+		);
+
+		console.log('patched:', JSON.stringify(patched, null, 4));
+	});
 });
 
 describe('translate', () => {
