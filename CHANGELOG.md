@@ -4,6 +4,11 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 2.0.36 - 2022-02-24
+
+* Transform serialize-error [Josh Bowling]
+* Update internal-patch [Renovate Bot]
+
 ## 2.0.35 - 2022-02-23
 
 * Update @balena/jellyfish-environment from 7.0.1 to 8.0.0 [Renovate Bot]
