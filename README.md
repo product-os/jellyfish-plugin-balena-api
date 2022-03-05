@@ -7,10 +7,11 @@ Provides a sync integration for Balena API.
 Below is an example how to use this library:
 
 ```js
+import { balenaApiPlugin } from '@balena/jellyfish-plugin-balena-api';
 import { defaultPlugin } from '@balena/jellyfish-plugin-default';
 import { PluginManager } from '@balena/jellyfish-worker';
-import { balenaApiPlugin } from '@balena/jellyfish-plugin-balena-api';
 
+// Load cards from this plugin
 const pluginManager = new PluginManager([defaultPlugin(), balenaApiPlugin()]);
 const cards = pluginManager.getCards();
 console.dir(cards);
