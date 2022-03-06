@@ -4,6 +4,34 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 2.0.40 - 2022-03-06
+
+* Update @balena/jellyfish-plugin-default from 23.3.25 to 24.0.0 [Renovate Bot]
+* Update internal-patch [Renovate Bot]
+* Update lint-staged from 12.3.4 to 12.3.5 [Josh Bowling]
+* Update internal-patch [Renovate Bot]
+* Update internal-patch [Renovate Bot]
+* Update internal-patch [Renovate Bot]
+* Update internal-patch [Renovate Bot]
+* Update internal-patch [Renovate Bot]
+* Update internal-patch [Renovate Bot]
+* Update @types/node-jose from 1.1.8 to 1.1.9 [Josh Bowling]
+* Update internal-patch [Renovate Bot]
+* Update readme usage example [Josh Bowling]
+* Update internal-patch [Renovate Bot]
+* Update readme [Josh Bowling]
+* Update internal-patch [Renovate Bot]
+* Update internal-patch [Renovate Bot]
+* Update internal-patch [Renovate Bot]
+* Renovate: Stop ignoring internal patches [Josh Bowling]
+* Remove jest esm transforms [Josh Bowling]
+* Update @balena/jellyfish-worker from 18.8.10 to 19.0.0 [Josh Bowling]
+* Update internal-patch [Renovate Bot]
+* 🔄 Synced file(s) with product-os/secrets [joshbwlng]
+* Update internal-patch [Renovate Bot]
+* Update @balena/jellyfish-logger from 4.0.40 to 5.0.0 [Renovate Bot]
+* Update external-non-major [Renovate Bot]
+
 ## 2.0.39 - 2022-02-25
 
 * Update @balena/jellyfish-environment from 9.0.0 to 9.1.0 [Renovate Bot]

@@ -1,4 +1,222 @@
 - commits:
+    - subject: Update @balena/jellyfish-plugin-default from 23.3.25 to 24.0.0
+      hash: 7cb2cf78ce9661e19586866cae2278fd4ad5b381
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Update internal-patch
+      hash: 0306f665071df139464dc70229fa9d6129d93dca
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Update lint-staged from 12.3.4 to 12.3.5
+      hash: ada1880e207e48228b2ec2bee8c3c3a5c9f480ee
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: Update internal-patch
+      hash: b3d1105587c20ced27b36c9f5290e234f19fbb71
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Update internal-patch
+      hash: 868b8d5befb348e1833a0c558cc0757aea11d140
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Update internal-patch
+      hash: 9a8f912ff538d3e6206e94dccd3b21548f69f4fc
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Update internal-patch
+      hash: 220fa582b039e01e24c9539deabfef319755532b
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Update internal-patch
+      hash: bbba5a576d93e4f7fe44a82699e40f01f2310752
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Update internal-patch
+      hash: 49b5a070b905c772f58df1b671fb804bb9d1e003
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Update @types/node-jose from 1.1.8 to 1.1.9
+      hash: ca781ba64672361175cdcec5177caa3f8eb546d6
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: Update internal-patch
+      hash: 6c4e95c569fcc7c753464e4115412904a9d3726a
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Update readme usage example
+      hash: 6bb9b60d34e043217ab794abe73614e80e31beab
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: Update internal-patch
+      hash: 6153bd0ff10e31dd8c9874234f9c018310f98395
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Update readme
+      hash: 8820d1aad5f5a477fbfba3232566994f8e65fe5a
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: Update internal-patch
+      hash: 606361817d340fda7efa826f1feac47ba5549576
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Update internal-patch
+      hash: cf4a5595e556a39f18ffe5a5efdd28304f48e8fb
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Update internal-patch
+      hash: 21dd140a0ce10b8faa025fe49cbcb3628e0e5254
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: "Renovate: Stop ignoring internal patches"
+      hash: 5e8253c2f79f6501fe54c4422cf6c2e920a690fb
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: Remove jest esm transforms
+      hash: 38ea6abdd5c5c17abfc896f9cc52d04b998046ec
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: Update @balena/jellyfish-worker from 18.8.10 to 19.0.0
+      hash: 96fee1757c3c0210b8586bce3972a43af09583cb
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: Update internal-patch
+      hash: a690c35ddf2136ce44bf0595fbeb292ebcda790f
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: 🔄 Synced file(s) with product-os/secrets
+      hash: 86809ec2a09d2b4050f53bd5b91cfc7550cd0900
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: joshbwlng
+      nested: []
+    - subject: Update internal-patch
+      hash: eb9b196cb38df96179615712f4306c685729bdac
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Update @balena/jellyfish-logger from 4.0.40 to 5.0.0
+      hash: a37518f1d1376adf56c023eb492397e713e8c4df
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Update external-non-major
+      hash: d6d8c0c0f8c648ba0a55d1c704ed7ff55882c82a
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.0.40
+  title: "'Update @balena/jellyfish-plugin-default from 23.3.25 to 24.0.0'"
+  date: 2022-03-06T11:38:15.677Z
+- commits:
     - subject: Update @balena/jellyfish-environment from 9.0.0 to 9.1.0
       hash: 4c4dd712fcca5541c116a22c40cd78c9a17eeee7
       body: ""
