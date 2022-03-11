@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 2.0.49 - 2022-03-11
+
+* Update internal-patch [Renovate Bot]
+
 ## 2.0.48 - 2022-03-10
 
 * Update axios from 0.26.0 to 0.26.1 [Renovate Bot]
