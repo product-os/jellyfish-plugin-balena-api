@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 2.0.66 - 2022-03-25
+
+* Bump internal deps [Josh Bowling]
+
 ## 2.0.65 - 2022-03-23
 
 * Update resinci/jellyfish-test from 1.4.27 to 3.0.3 [Josh Bowling]
