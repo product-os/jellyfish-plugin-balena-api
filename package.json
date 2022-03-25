@@ -46,10 +46,10 @@
   "author": "Balena.io. <hello@balena.io>",
   "license": "AGPL-3.0",
   "dependencies": {
-    "@balena/jellyfish-assert": "^1.2.20",
+    "@balena/jellyfish-assert": "^1.2.21",
     "@balena/jellyfish-environment": "^9.1.6",
     "@balena/jellyfish-logger": "^5.0.10",
-    "@balena/jellyfish-worker": "^21.0.0",
+    "@balena/jellyfish-worker": "^21.0.2",
     "axios": "^0.26.1",
     "geoip-lite": "^1.4.3",
     "jsonwebtoken": "^8.5.1",
