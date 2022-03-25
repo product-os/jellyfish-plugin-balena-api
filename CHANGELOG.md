@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 2.0.68 - 2022-03-25
+
+* Update internal-patch [Renovate Bot]
+
 ## 2.0.67 - 2022-03-25
 
 * Update typescript from 4.6.2 to 4.6.3 [Renovate Bot]
