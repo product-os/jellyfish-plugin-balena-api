@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 2.0.90 - 2022-04-12
+
+* Drop old secrets [Josh Bowling]
+
 ## 2.0.89 - 2022-04-12
 
 * 🔄 Synced file(s) with product-os/secrets [joshbwlng]
