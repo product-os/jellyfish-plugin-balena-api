@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update secrets
+      hash: fa2da5ed087f042cd5d7102cab7bc20534ec4e45
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 2.0.96
+  title: "'Update secrets'"
+  date: 2022-04-13T03:19:19.324Z
+- commits:
     - subject: Update resinci/jellyfish-test from v3.0.6 to v3.0.7
       hash: 1ac39762ac1f268570d0f394601487df8572ed13
       body: ""
