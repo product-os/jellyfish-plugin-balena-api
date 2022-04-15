@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 2.0.103 - 2022-04-15
+
+* 🔄 Synced file(s) with product-os/jellyfish-config [joshbwlng]
+
 ## 2.0.102 - 2022-04-14
 
 * Remove secrets [Josh Bowling]
