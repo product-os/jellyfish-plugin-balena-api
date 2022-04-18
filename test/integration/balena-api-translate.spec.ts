@@ -55,6 +55,8 @@ beforeAll(async () => {
 		plugins: [productOsPlugin(), defaultPlugin(), balenaApiPlugin()],
 	});
 
+	ctx.worker.contractsStream.removeAllListeners();
+	ctx.worker.contractsStream.close();
 	await testUtils.translateBeforeAll(ctx);
 });
 
