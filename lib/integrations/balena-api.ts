@@ -710,6 +710,8 @@ const getExternalUserSyncEventData = async (
 };
 
 export const balenaApiIntegrationDefinition: IntegrationDefinition = {
+	slug: SLUG,
+
 	initialize: async (options) => new BalenaAPIIntegration(options),
 	isEventValid: async (
 		context,
