@@ -4,6 +4,11 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 4.0.0 - 2022-05-13
+
+* Update dependencies (internal patch bumps) [Renovate Bot]
+* Include client details in provider contract [karaxuna]
+
 ## 3.0.1 - 2022-05-11
 
 * Update @balena/jellyfish-plugin-default from 25.0.1 to 25.1.0 [Renovate Bot]

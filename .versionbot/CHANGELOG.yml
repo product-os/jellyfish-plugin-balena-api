@@ -1,4 +1,26 @@
 - commits:
+    - subject: Update dependencies (internal patch bumps)
+      hash: 64fdcc54c3914d32f1cfbf7f568dbe3ea962adbe
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: Include client details in provider contract
+      hash: a6d6621f62b6ad37305091ee0c9fea93c84d6708
+      body: >
+        Oauth client for external providers should not exist. Include client
+        information in oauth-provider contract.
+      footer:
+        Change-type: major
+        change-type: major
+      author: karaxuna
+      nested: []
+  version: 4.0.0
+  title: "'Update dependencies (internal patch bumps)'"
+  date: 2022-05-13T16:04:38.294Z
+- commits:
     - subject: Update @balena/jellyfish-plugin-default from 25.0.1 to 25.1.0
       hash: 6f2b214d0f4861c84823a3b7e92bfb37e53a2f2f
       body: ""
