@@ -598,7 +598,7 @@ const whoami = async (
 	const { code: statusCode, body: externalUser } = await new Promise(
 		(resolve: any, reject: any) => {
 			axios
-				.get(`${integration.oauthBaseUrl}/user/v1/whoami`, {
+				.get('https://dashboard.balena-cloud.com/user/v1/whoami', {
 					headers: {
 						Authorization: `${credentials.token_type} ${credentials.access_token}`,
 					},
@@ -713,12 +713,7 @@ export const balenaApiIntegrationDefinition: IntegrationDefinition = {
 	slug: SLUG,
 
 	initialize: async (options) => new BalenaAPIIntegration(options),
-	isEventValid: async (
-		context,
-		token,
-		rawEvent,
-		_headers,
-	): Promise<boolean> => {
+	isEventValid: async (context, token, rawEvent): Promise<boolean> => {
 		if (!token) {
 			return false;
 		}
@@ -737,8 +732,6 @@ export const balenaApiIntegrationDefinition: IntegrationDefinition = {
 
 		return true;
 	},
-	OAUTH_BASE_URL: integration.oauthBaseUrl,
-	OAUTH_SCOPES: [],
 	whoami,
 	match,
 	getExternalUserSyncEventData,
