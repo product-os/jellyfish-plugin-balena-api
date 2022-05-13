@@ -12,7 +12,7 @@ export const oauthProviderBalenaAPI: ContractDefinition = {
 		}?${qs.stringify({
 			response_type: 'code',
 		})}`,
-		tokenUrl: 'https://api.balena-cloud.com/oauth/token/oauth2/token',
+		tokenUrl: 'https://api.balena-cloud.com/oauth/token',
 		clientId: environment.integration['balena-api'].appId,
 		clientSecret: environment.integration['balena-api'].appSecret,
 		integration: 'balena-api',
