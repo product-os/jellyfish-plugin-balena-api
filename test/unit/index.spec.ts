@@ -8,7 +8,6 @@ test('Expected cards are loaded', () => {
 	const cards = pluginManager.getCards();
 
 	// Sanity check
-	expect(cards['oauth-client-balena-api'].name).toEqual('Balena oauth client');
 	expect(cards['oauth-provider-balena-api'].name).toEqual(
 		'Balena oauth provider',
 	);

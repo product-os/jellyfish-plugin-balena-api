@@ -99,7 +99,7 @@ describe('translate', () => {
 					},
 					{
 						source: 'balena-api',
-						baseUrl: defaultEnvironment.integration['balena-api'].oauthBaseUrl,
+						baseUrl: 'https://api.balena-cloud.com',
 						uriPath: /.*/,
 						basePath: path.join(__dirname, 'webhooks'),
 						isAuthorized: (request: any) => {
