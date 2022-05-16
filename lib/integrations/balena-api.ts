@@ -1,6 +1,6 @@
 import * as assert from '@balena/jellyfish-assert';
 import { defaultEnvironment } from '@balena/jellyfish-environment';
-import { getLogger, LogContext } from '@balena/jellyfish-logger';
+import { getLogger } from '@balena/jellyfish-logger';
 import { Integration, IntegrationDefinition } from '@balena/jellyfish-worker';
 import * as syncErrors from '@balena/jellyfish-worker/build/sync/errors';
 import { SyncActionContext } from '@balena/jellyfish-worker/build/sync/sync-context';
@@ -591,7 +591,7 @@ export class BalenaAPIIntegration implements Integration {
 }
 
 const whoami = async (
-	logContext: LogContext,
+	context: SyncActionContext,
 	credentials: any,
 	retries = 10,
 ): Promise<any> => {
@@ -626,11 +626,11 @@ const whoami = async (
 		await new Promise((resolve) => {
 			setTimeout(resolve, 5000);
 		});
-		return whoami(logContext, credentials, retries - 1);
+		return whoami(context, credentials, retries - 1);
 	}
 
 	assert.INTERNAL(
-		logContext,
+		context.logContext,
 		externalUser && statusCode === 200,
 		syncErrors.SyncExternalRequestError,
 		`Failed to fetch user information from balena-api. Response status code: ${statusCode}`,
