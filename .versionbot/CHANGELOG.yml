@@ -1,4 +1,16 @@
 - commits:
+    - subject: Fix whoami endpoint
+      hash: 37d81137f3dfbdc4f48daa23c157cdc24e16edcd
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: karaxuna
+      nested: []
+  version: 5.0.16
+  title: "'Fix whoami endpoint'"
+  date: 2022-06-04T09:28:09.332Z
+- commits:
     - subject: Update typescript from 4.7.2 to 4.7.3
       hash: 78b63fce268d9c0cd1c7eca3372767471c6e5212
       body: ""
