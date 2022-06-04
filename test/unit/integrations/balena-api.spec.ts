@@ -62,7 +62,7 @@ describe('whoami()', () => {
 			email: 'foo@bar.baz',
 		};
 
-		nock('https://dashboard.balena-cloud.com', {
+		nock('https://api.balena-cloud.com', {
 			reqheaders: {
 				Authorization: `${credentials.token_type} ${credentials.access_token}`,
 			},
