@@ -598,7 +598,7 @@ const whoami = async (
 	const { code: statusCode, body: externalUser } = await new Promise(
 		(resolve: any, reject: any) => {
 			axios
-				.get('https://dashboard.balena-cloud.com/user/v1/whoami', {
+				.get('https://api.balena-cloud.com/user/v1/whoami', {
 					headers: {
 						Authorization: `${credentials.token_type} ${credentials.access_token}`,
 					},
