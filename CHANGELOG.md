@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 5.0.17 - 2022-06-05
+
+* Update external-major (external major bumps) [Renovate Bot]
+
 ## 5.0.16 - 2022-06-04
 
 * Fix whoami endpoint [karaxuna]

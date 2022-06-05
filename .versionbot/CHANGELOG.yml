@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update external-major (external major bumps)
+      hash: 851ddb1bdb9ecfa211ff8d03eb3ed876b0abb0f9
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 5.0.17
+  title: "'Update external-major (external major bumps) (major)'"
+  date: 2022-06-05T13:50:31.694Z
+- commits:
     - subject: Fix whoami endpoint
       hash: 37d81137f3dfbdc4f48daa23c157cdc24e16edcd
       body: ""
