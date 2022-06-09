@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 5.0.22 - 2022-06-09
+
+* Update @balena/jellyfish-plugin-default from 27.7.1 to 27.8.0 [Renovate Bot]
+
 ## 5.0.21 - 2022-06-08
 
 * Update resinci/jellyfish-test from v3.0.13 to v3.0.14 [Renovate Bot]
