@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update dependencies
+      hash: 88d3cb4bbf3155575bb802018ac43197594e06d8
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 5.0.23
+  title: "'Update dependencies'"
+  date: 2022-06-11T11:22:27.200Z
+- commits:
     - subject: Update @balena/jellyfish-plugin-default from 27.7.1 to 27.8.0
       hash: 9b2714a4683565197d16f9c88f6f5ce845941f5c
       body: ""
