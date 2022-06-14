@@ -1,4 +1,18 @@
 - commits:
+    - subject: Use official Postgres 14 image
+      hash: 4088f5c59c6eac997bc2e2a806522351213381eb
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 5.0.24
+  title: "'Use official Postgres 14 image'"
+  date: 2022-06-14T03:56:30.483Z
+- commits:
     - subject: Update dependencies
       hash: 88d3cb4bbf3155575bb802018ac43197594e06d8
       body: ""
