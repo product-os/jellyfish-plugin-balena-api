@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 5.0.30 - 2022-06-21
+
+* Bump dependencies [Josh Bowling]
+
 ## 5.0.29 - 2022-06-20
 
 * CI: Use standard node image [Josh Bowling]
