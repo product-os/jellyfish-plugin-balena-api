@@ -50,7 +50,7 @@
     "@balena/jellyfish-environment": "^12.0.11",
     "@balena/jellyfish-logger": "^5.1.6",
     "@balena/jellyfish-worker": "^30.0.21",
-    "axios": "^0.26.1",
+    "axios": "^0.27.2",
     "geoip-lite": "^1.4.5",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
@@ -78,7 +78,7 @@
     "rimraf": "^3.0.2",
     "simple-git-hooks": "^2.8.0",
     "ts-jest": "^28.0.5",
-    "typedoc": "^0.22.18",
+    "typedoc": "^0.23.1",
     "typescript": "^4.7.4"
   },
   "simple-git-hooks": {
