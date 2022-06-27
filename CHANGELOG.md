@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 5.0.32 - 2022-06-27
+
+* Update external-zero-minor (external v0 minor bumps) [renovate[bot]]
+
 ## 5.0.31 - 2022-06-25
 
 * Update typedoc from 0.22.17 to 0.22.18 [renovate[bot]]
