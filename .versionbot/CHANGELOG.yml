@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update typedoc from 0.22.18 to 0.23.1
+      hash: 68d28f5ef6f2dcb52339bf58f97427bf1bdbba04
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 5.0.33
+  title: "'Update typedoc from 0.22.18 to 0.23.1'"
+  date: 2022-06-27T02:31:56.323Z
+- commits:
     - subject: Update external-zero-minor (external v0 minor bumps)
       hash: cd5ac34c9539d33de5a05cf864cc537e5b1ad9ff
       body: ""
