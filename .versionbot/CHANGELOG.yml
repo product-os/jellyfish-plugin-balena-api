@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update typedoc from 0.23.4 to 0.23.5
+      hash: 89b75f9758d3a5b25c55956e73de057c910fa889
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 5.0.39
+  title: "'Update typedoc from 0.23.4 to 0.23.5'"
+  date: 2022-07-02T19:32:18.835Z
+- commits:
     - subject: Update typedoc from 0.23.2 to 0.23.4
       hash: 9935c56cb79d0889a547499c2cbaa71ca9fa9b42
       body: ""
