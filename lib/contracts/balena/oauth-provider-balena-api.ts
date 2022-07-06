@@ -1,5 +1,5 @@
-import type { ContractDefinition } from '@balena/jellyfish-types/build/core';
 import { defaultEnvironment as environment } from '@balena/jellyfish-environment';
+import type { ContractDefinition } from 'autumndb';
 import qs from 'qs';
 
 export const oauthProviderBalenaAPI: ContractDefinition = {
