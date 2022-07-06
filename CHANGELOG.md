@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 5.0.42 - 2022-07-06
+
+* Drop jellyfish-types [Josh Bowling]
+
 ## 5.0.41 - 2022-07-06
 
 * Update @balena/jellyfish-worker from 30.1.1 to 30.2.0 [renovate[bot]]
