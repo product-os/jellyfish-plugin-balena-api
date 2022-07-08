@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 5.0.43 - 2022-07-08
+
+* Update typedoc from 0.23.5 to 0.23.6 [renovate[bot]]
+
 ## 5.0.42 - 2022-07-06
 
 * Drop jellyfish-types [Josh Bowling]
