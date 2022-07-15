@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 5.0.48 - 2022-07-15
+
+* Drop plugin-product-os [Josh Bowling]
+
 ## 5.0.47 - 2022-07-13
 
 * Update @balena/jellyfish-worker from 31.0.0 to 31.1.0 [renovate[bot]]
