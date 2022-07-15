@@ -1,6 +1,5 @@
 import { defaultEnvironment } from '@balena/jellyfish-environment';
 import { defaultPlugin } from '@balena/jellyfish-plugin-default';
-import { productOsPlugin } from '@balena/jellyfish-plugin-product-os';
 import { testUtils } from '@balena/jellyfish-worker';
 import * as jwt from 'jsonwebtoken';
 import _ from 'lodash';
@@ -52,7 +51,7 @@ async function prepareEvent(event: any): Promise<any> {
 
 beforeAll(async () => {
 	ctx = await testUtils.newContext({
-		plugins: [productOsPlugin(), defaultPlugin(), balenaApiPlugin()],
+		plugins: [defaultPlugin(), balenaApiPlugin()],
 	});
 
 	// TODO: Improve translate test suite/protocol to avoid this
