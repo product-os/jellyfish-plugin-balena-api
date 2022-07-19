@@ -4,10 +4,9 @@ import * as jwt from 'jsonwebtoken';
 import * as randomstring from 'randomstring';
 import { v4 as uuidv4 } from 'uuid';
 import { PluginManager } from '@balena/jellyfish-worker';
-import { defaultPlugin } from '@balena/jellyfish-plugin-default';
 import { balenaApiPlugin } from '../../../lib';
 
-const pluginManager = new PluginManager([defaultPlugin(), balenaApiPlugin()]);
+const pluginManager = new PluginManager([balenaApiPlugin()]);
 const balenaApiIntegration = pluginManager.getSyncIntegrations()['balena-api'];
 
 const logContext: any = {

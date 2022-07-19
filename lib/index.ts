@@ -15,11 +15,5 @@ export const balenaApiPlugin = (): PluginDefinition => {
 		version,
 		contracts,
 		integrationMap: integrations,
-		requires: [
-			{
-				slug: 'plugin-default',
-				version: '>=21.x',
-			},
-		],
 	};
 };
