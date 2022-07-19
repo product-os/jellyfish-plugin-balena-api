@@ -1,4 +1,19 @@
 - commits:
+    - subject: Upgrade to latest worker v32.x
+      hash: 9b8341aa6c66dffa9e0a3169d59a4ff52d3e4f3d
+      body: |
+        This brings in a major change to how sessions are handled in AutumnDB.
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Lucian Buzzo <lucian.buzzo@gmail.com>
+        signed-off-by: Lucian Buzzo <lucian.buzzo@gmail.com>
+      author: Lucian Buzzo
+      nested: []
+  version: 6.0.0
+  title: "'Upgrade to latest worker v32.x'"
+  date: 2022-07-19T17:42:59.700Z
+- commits:
     - subject: Update autumndb from 20.3.3 to 21.0.0
       hash: 784529148daae2f9471f2a1708c67ec57c8bd8a7
       body: ""
