@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 5.0.52 - 2022-07-19
+
+* Update autumndb from 20.3.3 to 21.0.0 [renovate[bot]]
+
 ## 5.0.51 - 2022-07-19
 
 * Drop plugin-default [Josh Bowling]
