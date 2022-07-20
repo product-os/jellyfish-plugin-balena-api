@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.1 - 2022-07-20
+
+* Update autumndb from 21.0.0 to 21.1.1 [renovate[bot]]
+
 ## 6.0.0 - 2022-07-19
 
 * Upgrade to latest worker v32.x [Lucian Buzzo]
