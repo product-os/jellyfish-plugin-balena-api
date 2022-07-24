@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.4 - 2022-07-24
+
+* Update repo.yml [Josh Bowling]
+
 ## 6.0.3 - 2022-07-23
 
 * CI: Disable redis persistence [Josh Bowling]
