@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update @balena/jellyfish-assert from 1.2.49 to 1.2.50
+      hash: e6b77f0b5bc20767d69d2c96bcd4fc749da63597
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 6.0.20
+  title: "'Update @balena/jellyfish-assert from 1.2.49 to 1.2.50'"
+  date: 2022-08-01T05:07:05.372Z
+- commits:
     - subject: Update jest monorepo
       hash: 971b48c1fe3d90f9291780728aff313fbfc008f8
       body: ""
