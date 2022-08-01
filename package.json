@@ -1,7 +1,7 @@
 {
   "name": "@balena/jellyfish-plugin-balena-api",
   "description": "Balena API Jellyfish Plugin",
-  "version": "6.0.20",
+  "version": "6.0.21",
   "repository": {
     "type": "git",
     "url": "https://github.com/product-os/jellyfish-plugin-balena-api"
@@ -83,6 +83,6 @@
     "pre-commit": "npx lint-staged"
   },
   "versionist": {
-    "publishedAt": "2022-08-01T05:07:05.653Z"
+    "publishedAt": "2022-08-01T05:22:57.189Z"
   }
 }
