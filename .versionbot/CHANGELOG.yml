@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update lint-staged from 13.0.2 to 13.0.3
+      hash: 6ee0328f43777bedd05bfe7eaac60c2cf1f6b39d
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 6.0.48
+  title: "'Update lint-staged from 13.0.2 to 13.0.3'"
+  date: 2022-08-13T14:43:51.557Z
+- commits:
     - subject: Update geoip-lite from 1.4.5 to 1.4.6
       hash: 25fce040eaee132d3f0318a8cda543cdc5ae71c8
       body: ""
