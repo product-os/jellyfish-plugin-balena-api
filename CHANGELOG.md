@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.50 - 2022-08-13
+
+* Update ts-jest from 28.0.5 to 28.0.7 [renovate[bot]]
+
 ## 6.0.49 - 2022-08-13
 
 * Update nock from 13.2.7 to 13.2.9 [renovate[bot]]
