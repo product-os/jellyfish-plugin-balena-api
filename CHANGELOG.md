@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.49 - 2022-08-13
+
+* Update nock from 13.2.7 to 13.2.9 [renovate[bot]]
+
 ## 6.0.48 - 2022-08-13
 
 * Update lint-staged from 13.0.2 to 13.0.3 [renovate[bot]]
