@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update geoip-lite from 1.4.5 to 1.4.6
+      hash: 25fce040eaee132d3f0318a8cda543cdc5ae71c8
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 6.0.47
+  title: "'Update geoip-lite from 1.4.5 to 1.4.6'"
+  date: 2022-08-13T12:23:45.775Z
+- commits:
     - subject: Update autumndb from 22.1.6 to 22.1.8
       hash: 8089d55d12b64bb3e6584a5bb213b3de0e258ee2
       body: ""

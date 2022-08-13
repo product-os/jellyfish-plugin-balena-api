@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.47 - 2022-08-13
+
+* Update geoip-lite from 1.4.5 to 1.4.6 [renovate[bot]]
+
 ## 6.0.46 - 2022-08-13
 
 * Update autumndb from 22.1.6 to 22.1.8 [renovate[bot]]
