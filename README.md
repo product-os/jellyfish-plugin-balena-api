@@ -6,13 +6,12 @@ Provides a sync integration for Balena API.
 
 Below is an example how to use this library:
 
-```js
+```typescript
 import { balenaApiPlugin } from '@balena/jellyfish-plugin-balena-api';
-import { defaultPlugin } from '@balena/jellyfish-plugin-default';
 import { PluginManager } from '@balena/jellyfish-worker';
 
 // Load contracts from this plugin
-const pluginManager = new PluginManager([defaultPlugin(), balenaApiPlugin()]);
+const pluginManager = new PluginManager([balenaApiPlugin()]);
 const contracts = pluginManager.getCards();
 console.dir(contracts);
 ```
