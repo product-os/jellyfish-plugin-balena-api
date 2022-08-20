@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update @types/lodash from 4.14.182 to 4.14.184
+      hash: 0eca15c83246620da4fb4c3a64d8954994be6cae
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 6.0.71
+  title: "'Update @types/lodash from 4.14.182 to 4.14.184'"
+  date: 2022-08-20T11:05:50.986Z
+- commits:
     - subject: Update @balena/jellyfish-worker from 33.0.17 to 33.0.19
       hash: 5e0c72cb13fa628618fa53f0595ea9fb498c6613
       body: ""
