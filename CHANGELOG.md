@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.93 - 2022-09-10
+
+* Update @balena/jellyfish-assert from 1.2.54 to 1.2.60 [renovate[bot]]
+
 ## 6.0.92 - 2022-09-10
 
 * Bump external packages [Josh Bowling]
