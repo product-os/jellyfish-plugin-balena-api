@@ -595,7 +595,7 @@ const whoami = async (
 	credentials: any,
 	retries = 10,
 ): Promise<any> => {
-	const { code: statusCode, body: externalUser } = await new Promise(
+	const { code: statusCode, body: externalUser }: any = await new Promise(
 		(resolve: any, reject: any) => {
 			axios
 				.get('https://api.balena-cloud.com/user/v1/whoami', {
