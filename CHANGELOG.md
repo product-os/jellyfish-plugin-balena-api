@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.95 - 2022-09-10
+
+* Update @types/jsonwebtoken from 8.5.8 to 8.5.9 [renovate[bot]]
+
 ## 6.0.94 - 2022-09-10
 
 * Update @balena/jellyfish-logger from 5.1.37 to 5.1.48 [renovate[bot]]

@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update @types/jsonwebtoken from 8.5.8 to 8.5.9
+      hash: 19d8b613fd8206310be7e4333e3192623d49f418
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 6.0.95
+  title: "'Update @types/jsonwebtoken from 8.5.8 to 8.5.9'"
+  date: 2022-09-10T04:39:57.762Z
+- commits:
     - subject: Update @balena/jellyfish-logger from 5.1.37 to 5.1.48
       hash: 687f44786a758cd208a43c2bed0660165db83b1c
       body: ""
