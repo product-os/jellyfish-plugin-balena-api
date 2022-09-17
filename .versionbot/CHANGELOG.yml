@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update ts-jest from 29.0.0 to 29.0.1
+      hash: cd4f7b2737969d73eb7cd8911dbb3ee6eeadb02c
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 6.0.148
+  title: ""
+  date: 2022-09-17T17:12:43.781Z
+- commits:
     - subject: Update autumndb from 22.2.45 to 22.2.52
       hash: 91dd08681a1a4eeabb09870572861f433bc7337a
       body: ""
