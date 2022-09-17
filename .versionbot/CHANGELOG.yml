@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update @types/jest from 29.0.1 to 29.0.3
+      hash: 4b7c58d7b03b5516c040ab00af36571f0b69824d
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 6.0.145
+  title: ""
+  date: 2022-09-17T11:32:38.911Z
+- commits:
     - subject: Update @balena/jellyfish-worker from 33.4.40 to 33.4.44
       hash: 084171788219e790302c48a9b2d6e200ac8c67a8
       body: ""
