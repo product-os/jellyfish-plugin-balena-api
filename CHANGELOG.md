@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.152 - 2022-09-18
+
+* Update docker-compose version to 3.9 [Josh Bowling]
+
 ## 6.0.151 - 2022-09-18
 
 * Update @balena/jellyfish-worker from 33.4.52 to 33.4.53 [renovate[bot]]

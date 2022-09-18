@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update docker-compose version to 3.9
+      hash: 17c0783f96d66255b03d35214c883fc77b2035d8
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 6.0.152
+  title: ""
+  date: 2022-09-18T12:30:32.210Z
+- commits:
     - subject: Update @balena/jellyfish-worker from 33.4.52 to 33.4.53
       hash: 264a3fbedbf29bd677eb24a383ba4ce3c3c07a40
       body: ""
