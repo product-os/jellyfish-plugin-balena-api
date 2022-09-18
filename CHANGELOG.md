@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.149 - 2022-09-18
+
+* Update @balena/jellyfish-worker from 33.4.47 to 33.4.49 [renovate[bot]]
+
 ## 6.0.148 - 2022-09-17
 
 * Update ts-jest from 29.0.0 to 29.0.1 [renovate[bot]]
