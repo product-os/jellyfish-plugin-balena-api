@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.156 - 2022-09-18
+
+* Update @balena/jellyfish-assert from 1.2.69 to 1.2.70 [renovate[bot]]
+
 ## 6.0.155 - 2022-09-18
 
 * Update autumndb from 22.2.52 to 22.2.53 [renovate[bot]]
