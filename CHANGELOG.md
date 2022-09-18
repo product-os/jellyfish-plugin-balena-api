@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.154 - 2022-09-18
+
+* Update @balena/jellyfish-worker from 33.4.53 to 33.4.54 [renovate[bot]]
+
 ## 6.0.153 - 2022-09-18
 
 * CI: Drop npm test:compose script [Josh Bowling]
