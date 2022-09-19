@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.175 - 2022-09-19
+
+* Dev: Remove unenforceable .editorconfig [Josh Bowling]
+
 ## 6.0.174 - 2022-09-19
 
 * Update @balena/jellyfish-environment from 14.0.8 to 14.0.11 [renovate[bot]]
