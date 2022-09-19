@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update autumndb from 22.2.57 to 22.2.71
+      hash: 1cbe5a66b12c5a5f03eec7178d9af69ec364c955
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 6.0.179
+  title: ""
+  date: 2022-09-19T13:42:15.401Z
+- commits:
     - subject: Update @balena/jellyfish-worker from 33.4.65 to 33.4.74
       hash: 8a8e718ea74ccddb6ae73c4c77a39c0080f155d0
       body: ""
