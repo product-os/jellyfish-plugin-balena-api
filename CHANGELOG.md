@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.169 - 2022-09-19
+
+* Add CodeQL workflow [Josh Bowling]
+
 ## 6.0.168 - 2022-09-19
 
 * Dev: Add .nvmrc [Josh Bowling]
