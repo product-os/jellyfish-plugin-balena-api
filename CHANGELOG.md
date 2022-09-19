@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.164 - 2022-09-19
+
+* Update @balena/jellyfish-assert from 1.2.70 to 1.2.71 [renovate[bot]]
+
 ## 6.0.163 - 2022-09-19
 
 * Update typedoc from 0.23.14 to 0.23.15 [renovate[bot]]
