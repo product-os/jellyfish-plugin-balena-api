@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.173 - 2022-09-19
+
+* Update @balena/jellyfish-assert from 1.2.72 to 1.2.73 [renovate[bot]]
+
 ## 6.0.172 - 2022-09-19
 
 * Move CodeQL workflow config [Josh Bowling]
