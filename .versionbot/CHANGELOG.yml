@@ -1,4 +1,18 @@
 - commits:
+    - subject: Move CodeQL workflow config
+      hash: 94f2a94fc09a2e9306c9103ab1d39d25adae8a5b
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 6.0.172
+  title: ""
+  date: 2022-09-19T08:30:12.563Z
+- commits:
     - subject: Update @balena/jellyfish-environment from 14.0.7 to 14.0.8
       hash: 3e4097325a710283e50775267fc8d81bd7b000de
       body: ""
