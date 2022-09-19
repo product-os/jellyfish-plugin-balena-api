@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.176 - 2022-09-19
+
+* Update @balena/jellyfish-logger from 5.1.74 to 5.1.80 [renovate[bot]]
+
 ## 6.0.175 - 2022-09-19
 
 * Dev: Remove unenforceable .editorconfig [Josh Bowling]
