@@ -47,7 +47,7 @@
   "dependencies": {
     "@balena/jellyfish-assert": "^1.2.73",
     "@balena/jellyfish-environment": "^14.0.11",
-    "@balena/jellyfish-logger": "^5.1.80",
+    "@balena/jellyfish-logger": "^5.1.82",
     "@balena/jellyfish-worker": "^33.4.65",
     "axios": "^0.27.2",
     "geoip-lite": "^1.4.6",
