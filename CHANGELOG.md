@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.190 - 2022-09-27
+
+* Rely on flowzone for docs publishing [Page-]
+
 ## 6.0.189 - 2022-09-26
 
 * Update autumndb from 22.2.73 to 22.2.85 [renovate[bot]]
