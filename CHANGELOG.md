@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.200 - 2022-10-01
+
+* Update @balena/jellyfish-assert from 1.2.76 to 1.2.78 [renovate[bot]]
+
 ## 6.0.199 - 2022-10-01
 
 * Update @types/lodash from 4.14.185 to 4.14.186 [renovate[bot]]
