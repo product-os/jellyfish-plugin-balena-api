@@ -48,7 +48,7 @@
     "@balena/jellyfish-assert": "^1.2.80",
     "@balena/jellyfish-environment": "^14.0.21",
     "@balena/jellyfish-logger": "^5.1.102",
-    "@balena/jellyfish-worker": "^34.1.60",
+    "@balena/jellyfish-worker": "^34.1.61",
     "axios": "^0.27.2",
     "geoip-lite": "^1.4.6",
     "jsonwebtoken": "^8.5.1",
