@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.237 - 2022-10-08
+
+* Update @balena/jellyfish-assert from 1.2.80 to 1.2.84 [renovate[bot]]
+
 ## 6.0.236 - 2022-10-08
 
 * Dev: Use prettier for json/yml [Josh Bowling]
