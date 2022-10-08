@@ -10,11 +10,9 @@
     "requires": [],
     "capabilities": [],
     "data": {
-      "roles": [ "user-external-support" ],
+      "roles": ["user-external-support"],
       "hash": "PASSWORDLESS",
-      "mirrors": [
-        "https://api.balena-cloud.com/v5/user(999)"
-      ],
+      "mirrors": ["https://api.balena-cloud.com/v5/user(999)"],
       "profile": {
         "type": "professional",
         "company": "Souvlaki Tek",
@@ -50,11 +48,9 @@
           "capabilities": [],
           "data": {
             "email": "johndoe@souvlakitek.com",
-            "roles": [ "user-external-support" ],
+            "roles": ["user-external-support"],
             "hash": "PASSWORDLESS",
-            "mirrors": [
-              "https://api.balena-cloud.com/v5/user(999)"
-            ],
+            "mirrors": ["https://api.balena-cloud.com/v5/user(999)"],
             "profile": {
               "type": "professional",
               "company": "Souvlaki Tek",
