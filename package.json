@@ -63,7 +63,7 @@
   "devDependencies": {
     "@balena/lint": "^6.2.0",
     "@types/geoip-lite": "^1.4.1",
-    "@types/jest": "^29.1.1",
+    "@types/jest": "^29.1.2",
     "@types/jsonwebtoken": "^8.5.9",
     "@types/lodash": "^4.14.186",
     "@types/node-jose": "^1.1.10",
