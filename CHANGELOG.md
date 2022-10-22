@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.293 - 2022-10-22
+
+* Update simple-git-hooks from 2.8.0 to 2.8.1 [renovate[bot]]
+
 ## 6.0.292 - 2022-10-22
 
 * Update randomstring from 1.2.2 to 1.2.3 [renovate[bot]]

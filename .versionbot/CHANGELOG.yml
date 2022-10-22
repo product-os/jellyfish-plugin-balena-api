@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update simple-git-hooks from 2.8.0 to 2.8.1
+      hash: e1bdfefca2f5a1d4cf532407d71c4ef614949898
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 6.0.293
+  title: ""
+  date: 2022-10-22T09:25:38.426Z
+- commits:
     - subject: Update randomstring from 1.2.2 to 1.2.3
       hash: 9187df6aece5b844f66ba25c5b42438ec433f9d4
       body: ""
