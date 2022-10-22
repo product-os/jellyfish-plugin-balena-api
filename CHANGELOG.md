@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.292 - 2022-10-22
+
+* Update randomstring from 1.2.2 to 1.2.3 [renovate[bot]]
+
 ## 6.0.291 - 2022-10-22
 
 * Update autumndb from 22.2.154 to 22.2.158 [renovate[bot]]
