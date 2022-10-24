@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.299 - 2022-10-24
+
+* Docs: Remove badge from readme [Josh Bowling]
+
 ## 6.0.298 - 2022-10-23
 
 * Update @balena/jellyfish-environment from 14.4.4 to 14.4.5 [renovate[bot]]
