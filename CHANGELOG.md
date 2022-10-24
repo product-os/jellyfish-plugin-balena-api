@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.300 - 2022-10-24
+
+* Update autumndb from 22.2.158 to 22.2.159 [renovate[bot]]
+
 ## 6.0.299 - 2022-10-24
 
 * Docs: Remove badge from readme [Josh Bowling]
