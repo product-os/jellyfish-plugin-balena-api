@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.311 - 2022-11-25
+
+* Update autumndb from 22.2.167 to 22.2.173 [renovate[bot]]
+
 ## 6.0.310 - 2022-11-25
 
 * Update @balena/lint from 6.2.0 to 6.2.1 [renovate[bot]]

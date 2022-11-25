@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update autumndb from 22.2.167 to 22.2.173
+      hash: e72f163bf23a26cc04188416f0f7a205ed4a36d6
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 6.0.311
+  title: ""
+  date: 2022-11-25T05:29:35.232Z
+- commits:
     - subject: Update @balena/lint from 6.2.0 to 6.2.1
       hash: 03b8c048e086cd6f7c634e0f3b16fc2b7d9c5dc9
       body: ""
