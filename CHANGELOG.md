@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.324 - 2022-11-26
+
+* Update prettier from 2.7.1 to 2.8.0 [renovate[bot]]
+
 ## 6.0.323 - 2022-11-26
 
 * Update autumndb from 22.2.182 to 22.2.184 [renovate[bot]]
