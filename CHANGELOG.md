@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.0.323 - 2022-11-26
+
+* Update autumndb from 22.2.182 to 22.2.184 [renovate[bot]]
+
 ## 6.0.322 - 2022-11-26
 
 * Update lint-staged from 13.0.3 to 13.0.4 [renovate[bot]]
