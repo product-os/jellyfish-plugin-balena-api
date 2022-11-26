@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update autumndb from 22.2.180 to 22.2.182
+      hash: d90edbce8df0b325708094a2f8be4cf317d8b1b1
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 6.0.321
+  title: ""
+  date: 2022-11-26T10:10:34.238Z
+- commits:
     - subject: Update jest monorepo
       hash: 1b96a0e3acbbfe5677e9a28a1489fea7f040768f
       body: ""
