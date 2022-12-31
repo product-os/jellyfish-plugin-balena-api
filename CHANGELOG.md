@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.5.0 - 2022-12-31
+
+* Update dependency axios to 1.2.1 [Renovate Bot]
+
 ## 6.4.0 - 2022-12-22
 
 * Update dependency uuid to 9.0.0 [Renovate Bot]
