@@ -8,9 +8,9 @@ import axios from 'axios';
 import * as geoip from 'geoip-lite';
 import * as jwt from 'jsonwebtoken';
 import _ from 'lodash';
+import { randomUUID } from 'node:crypto';
 import * as jose from 'node-jose';
 import * as randomstring from 'randomstring';
-import { v4 as uuidv4 } from 'uuid';
 import * as utils from './utils';
 
 const SLUG = 'balena-api';
@@ -29,7 +29,7 @@ function getMirrorId(
 }
 
 function getCardSlug(type: string, name: string): string {
-	return `${type.split('@')[0]}-${utils.slugify(name || uuidv4())}`;
+	return `${type.split('@')[0]}-${utils.slugify(name || randomUUID())}`;
 }
 
 function userCreateContainsUsername(payload: any): boolean {

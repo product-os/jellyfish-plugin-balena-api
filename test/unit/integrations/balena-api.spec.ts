@@ -1,8 +1,8 @@
 import nock from 'nock';
 import * as jose from 'node-jose';
 import * as jwt from 'jsonwebtoken';
+import { randomUUID } from 'node:crypto';
 import * as randomstring from 'randomstring';
-import { v4 as uuidv4 } from 'uuid';
 import { PluginManager } from '@balena/jellyfish-worker';
 import { balenaApiPlugin } from '../../../lib';
 
@@ -52,8 +52,8 @@ async function encryptPayload(payload: any): Promise<any> {
 describe('whoami()', () => {
 	test('should get and return user information', async () => {
 		const credentials = {
-			token_type: uuidv4(),
-			access_token: uuidv4(),
+			token_type: randomUUID(),
+			access_token: randomUUID(),
 		};
 		const response = {
 			id: 1234,
@@ -81,7 +81,7 @@ describe('isEventValid()', () => {
 		const result = await balenaApiIntegration.isEventValid(
 			logContext,
 			{
-				id: uuidv4(),
+				id: randomUUID(),
 				api: 'xxxxx',
 				production: {
 					publicKey: TEST_BALENA_API_PUBLIC_KEY,
@@ -101,7 +101,7 @@ describe('isEventValid()', () => {
 		const result = await balenaApiIntegration.isEventValid(
 			logContext,
 			{
-				id: uuidv4(),
+				id: randomUUID(),
 				api: 'xxxxx',
 				production: {
 					publicKey: TEST_BALENA_API_PUBLIC_KEY,
@@ -126,7 +126,7 @@ describe('isEventValid()', () => {
 		const result = await balenaApiIntegration.isEventValid(
 			logContext,
 			{
-				id: uuidv4(),
+				id: randomUUID(),
 				api: 'xxxxx',
 				production: {
 					publicKey: TEST_BALENA_API_PUBLIC_KEY,
@@ -151,7 +151,7 @@ describe('isEventValid()', () => {
 		const result = await balenaApiIntegration.isEventValid(
 			logContext,
 			{
-				id: uuidv4(),
+				id: randomUUID(),
 				api: 'xxxxx',
 				privateKey: TEST_BALENA_API_PRIVATE_KEY,
 			},
@@ -173,7 +173,7 @@ describe('isEventValid()', () => {
 		const result = await balenaApiIntegration.isEventValid(
 			logContext,
 			{
-				id: uuidv4(),
+				id: randomUUID(),
 				api: 'xxxxx',
 				production: {
 					publicKey: TEST_BALENA_API_PUBLIC_KEY,
