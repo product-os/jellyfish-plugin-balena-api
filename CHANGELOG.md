@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.6.1 - 2023-01-01
+
+* Drop uuid [Josh Bowling]
+
 ## 6.6.0 - 2022-12-31
 
 * Update postgres Docker tag to v15 [Renovate Bot]
