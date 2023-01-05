@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.8.0 - 2023-01-05
+
+* Update actions/checkout digest to ac59398 [Renovate Bot]
+
 ## 6.7.0 - 2023-01-04
 
 * Update dependency @balena/jellyfish-environment to 15.0.1 [Renovate Bot]
