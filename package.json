@@ -54,7 +54,7 @@
     "@balena/jellyfish-worker": "^36.0.00",
     "axios": "^1.0.0",
     "geoip-lite": "^1.4.6",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "lodash": "^4.17.21",
     "node-jose": "^2.1.1",
     "randomstring": "^1.2.3"
@@ -63,7 +63,7 @@
     "@balena/lint": "^6.2.1",
     "@types/geoip-lite": "^1.4.1",
     "@types/jest": "^29.2.3",
-    "@types/jsonwebtoken": "^8.5.9",
+    "@types/jsonwebtoken": "^9.0.0",
     "@types/lodash": "^4.14.190",
     "@types/node": "^18.11.18",
     "@types/node-jose": "^1.1.10",
