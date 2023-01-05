@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update dependency jsonwebtoken to 9.0.0
+      hash: 1ff889827747608356a3942e2d3bf71517cd5f63
+      body: |
+        Update jsonwebtoken to 9.0.0
+
+        Update jsonwebtoken from 8.5.1 to 9.0.0
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested: []
+  version: 6.9.0
+  title: ""
+  date: 2023-01-05T15:48:15.917Z
+- commits:
     - subject: Update actions/checkout digest to ac59398
       hash: 1e48cebd0865b39272ca3698a7e3d98ab0746e6f
       body: |
