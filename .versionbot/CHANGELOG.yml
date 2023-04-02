@@ -1,4 +1,16 @@
 - commits:
+    - subject: Bump deps
+      hash: fa0a2066e0d251b33d323ae6e6a0ca47f011027d
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Josh Bowling
+      nested: []
+  version: 6.8.1
+  title: ""
+  date: 2023-04-02T13:56:39.913Z
+- commits:
     - subject: Update actions/checkout digest to ac59398
       hash: 1e48cebd0865b39272ca3698a7e3d98ab0746e6f
       body: |

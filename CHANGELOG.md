@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.8.1 - 2023-04-02
+
+* Bump deps [Josh Bowling]
+
 ## 6.8.0 - 2023-01-05
 
 * Update actions/checkout digest to ac59398 [Renovate Bot]
