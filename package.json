@@ -40,7 +40,7 @@
     "lint:fix": "balena-lint --fix lib test && prettier -w **/*.json **/*.yml",
     "test": "npm run lint && npm run test:unit",
     "test:unit": "jest test/unit",
-    "test:integration": "npx jest --runInBand --bail test/integration",
+    "test:integration": "npx jest --runInBand test/integration",
     "doc": "typedoc lib/ && touch docs/.nojekyll",
     "prepack": "npm run build",
     "compose": "docker-compose up"
