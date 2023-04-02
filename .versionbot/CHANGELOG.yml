@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update jest config
+      hash: 4e8c9e8abf70fdaae940d98195bd4a1b5a09550e
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Josh Bowling
+      nested: []
+  version: 6.8.2
+  title: ""
+  date: 2023-04-02T14:23:17.373Z
+- commits:
     - subject: Bump deps
       hash: fa0a2066e0d251b33d323ae6e6a0ca47f011027d
       body: ""
