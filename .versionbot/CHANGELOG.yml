@@ -1,4 +1,16 @@
 - commits:
+    - subject: Downgrade axios
+      hash: 52e001a3584c71bb2e5c57e36ea1fb89878e68e0
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Josh Bowling
+      nested: []
+  version: 6.8.3
+  title: ""
+  date: 2023-04-03T07:17:37.211Z
+- commits:
     - subject: Update jest config
       hash: 4e8c9e8abf70fdaae940d98195bd4a1b5a09550e
       body: ""
