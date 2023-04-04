@@ -1,7 +1,7 @@
 import nock from 'nock';
 import * as jose from 'node-jose';
 import * as jwt from 'jsonwebtoken';
-import { randomUUID } from 'node:crypto';
+import * as crypto from 'node:crypto';
 import * as randomstring from 'randomstring';
 import { PluginManager } from '@balena/jellyfish-worker';
 import { balenaApiPlugin } from '../../../lib';
@@ -13,10 +13,22 @@ const logContext: any = {
 	id: 'jellyfish-plugin-balena-api-test',
 };
 
-const TEST_BALENA_API_PRIVATE_KEY =
-	'LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JR0hBZ0VBTUJNR0J5cUdTTTQ5QWdFR0NDcUdTTTQ5QXdFSEJHMHdhd0lCQVFRZ0lGM1M3TkNkV1MyZXJEU0YKbEcxSnBFTEZid0pNckVURUR0d3ZRMFVSUFh5aFJBTkNBQVNDR1pPcmhZTmhoY1c5YTd5OHNTNStINVFFY2tEaApGK0ZVZUV4Si9UcEtCS256RVBMNVBGNGt0L0JwZVlFNmpoQ3UvUmpjWEhXdE1DOXdRTGpQU1ZXaQotLS0tLUVORCBQUklWQVRFIEtFWS0tLS0tCg==';
-const TEST_BALENA_API_PUBLIC_KEY =
-	'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUZrd0V3WUhLb1pJemowQ0FRWUlLb1pJemowREFRY0RRZ0FFZ2htVHE0V0RZWVhGdld1OHZMRXVmaCtVQkhKQQo0UmZoVkhoTVNmMDZTZ1NwOHhEeStUeGVKTGZ3YVhtQk9vNFFydjBZM0Z4MXJUQXZjRUM0ejBsVm9nPT0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg==';
+// @ts-expect-error
+const { privateKey, publicKey } = crypto.generateKeyPairSync('rsa', {
+	modulusLength: 2048,
+	privateKeyEncoding: {
+		type: 'pkcs8',
+		format: 'pem',
+	},
+	publicKeyEncoding: {
+		type: 'spki',
+		format: 'pem',
+	},
+	algorithm: 'RSA-SHA256',
+});
+
+const TEST_BALENA_API_PRIVATE_KEY = Buffer.from(privateKey).toString('base64');
+const TEST_BALENA_API_PUBLIC_KEY = Buffer.from(publicKey).toString('base64');
 
 async function encryptPayload(payload: any): Promise<any> {
 	const signedToken = jwt.sign(
@@ -25,7 +37,7 @@ async function encryptPayload(payload: any): Promise<any> {
 		},
 		Buffer.from(TEST_BALENA_API_PRIVATE_KEY, 'base64'),
 		{
-			algorithm: 'ES256',
+			algorithm: 'RS256',
 			expiresIn: 10 * 60 * 1000,
 			audience: 'jellyfish',
 			issuer: 'api.balena-cloud.com',
@@ -52,8 +64,8 @@ async function encryptPayload(payload: any): Promise<any> {
 describe('whoami()', () => {
 	test('should get and return user information', async () => {
 		const credentials = {
-			token_type: randomUUID(),
-			access_token: randomUUID(),
+			token_type: crypto.randomUUID(),
+			access_token: crypto.randomUUID(),
 		};
 		const response = {
 			id: 1234,
@@ -81,7 +93,7 @@ describe('isEventValid()', () => {
 		const result = await balenaApiIntegration.isEventValid(
 			logContext,
 			{
-				id: randomUUID(),
+				id: crypto.randomUUID(),
 				api: 'xxxxx',
 				production: {
 					publicKey: TEST_BALENA_API_PUBLIC_KEY,
@@ -101,7 +113,7 @@ describe('isEventValid()', () => {
 		const result = await balenaApiIntegration.isEventValid(
 			logContext,
 			{
-				id: randomUUID(),
+				id: crypto.randomUUID(),
 				api: 'xxxxx',
 				production: {
 					publicKey: TEST_BALENA_API_PUBLIC_KEY,
@@ -126,7 +138,7 @@ describe('isEventValid()', () => {
 		const result = await balenaApiIntegration.isEventValid(
 			logContext,
 			{
-				id: randomUUID(),
+				id: crypto.randomUUID(),
 				api: 'xxxxx',
 				production: {
 					publicKey: TEST_BALENA_API_PUBLIC_KEY,
@@ -151,7 +163,7 @@ describe('isEventValid()', () => {
 		const result = await balenaApiIntegration.isEventValid(
 			logContext,
 			{
-				id: randomUUID(),
+				id: crypto.randomUUID(),
 				api: 'xxxxx',
 				privateKey: TEST_BALENA_API_PRIVATE_KEY,
 			},
@@ -173,7 +185,7 @@ describe('isEventValid()', () => {
 		const result = await balenaApiIntegration.isEventValid(
 			logContext,
 			{
-				id: randomUUID(),
+				id: crypto.randomUUID(),
 				api: 'xxxxx',
 				production: {
 					publicKey: TEST_BALENA_API_PUBLIC_KEY,
