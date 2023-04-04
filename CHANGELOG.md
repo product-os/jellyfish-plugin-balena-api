@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.8.5 - 2023-04-04
+
+* Generate keys for unit tests [Josh Bowling]
+
 ## 6.8.4 - 2023-04-04
 
 * Update jsonwebtoken to 9.0.0 [Josh Bowling]

@@ -1,4 +1,16 @@
 - commits:
+    - subject: Generate keys for unit tests
+      hash: 4ca4cf009589a0cbf55e4bb80ed2a7eb7e4cccd7
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Josh Bowling
+      nested: []
+  version: 6.8.5
+  title: ""
+  date: 2023-04-04T08:50:21.822Z
+- commits:
     - subject: Update jsonwebtoken to 9.0.0
       hash: 67f035a02942c26d40eb3b7afde71cfed274567f
       body: ""
