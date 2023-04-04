@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update jsonwebtoken to 9.0.0
+      hash: 67f035a02942c26d40eb3b7afde71cfed274567f
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Josh Bowling
+      nested: []
+  version: 6.8.4
+  title: ""
+  date: 2023-04-04T07:46:12.222Z
+- commits:
     - subject: Downgrade axios
       hash: 52e001a3584c71bb2e5c57e36ea1fb89878e68e0
       body: ""
