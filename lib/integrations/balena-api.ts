@@ -6,7 +6,7 @@ import * as syncErrors from '@balena/jellyfish-worker/build/sync/errors';
 import { SyncActionContext } from '@balena/jellyfish-worker/build/sync/sync-context';
 import axios from 'axios';
 import * as geoip from 'geoip-lite';
-import * as jwt from 'jsonwebtoken';
+import { decode, sign, verify } from 'jsonwebtoken';
 import _ from 'lodash';
 import { randomUUID } from 'node:crypto';
 import * as jose from 'node-jose';
@@ -439,7 +439,7 @@ async function decryptPayload(token: any, payload: any): Promise<any> {
 	}
 
 	const signedToken = plainText.plaintext.toString('utf8');
-	const decoded: any = jwt.decode(signedToken);
+	const decoded: any = decode(signedToken);
 	const source = decoded!.data!.source;
 
 	const publicKey =
@@ -454,7 +454,7 @@ async function decryptPayload(token: any, payload: any): Promise<any> {
 	const verificationKey = Buffer.from(publicKey, 'base64');
 
 	return new Promise((resolve, reject) => {
-		jwt.verify(signedToken, verificationKey, (error: any, result: any) => {
+		verify(signedToken, verificationKey, (error: any, result: any) => {
 			if (error) {
 				return reject(error);
 			}
@@ -678,7 +678,7 @@ const getExternalUserSyncEventData = async (
 		},
 	};
 
-	const signedToken = jwt.sign(
+	const signedToken = sign(
 		{
 			data: event.payload,
 		},
