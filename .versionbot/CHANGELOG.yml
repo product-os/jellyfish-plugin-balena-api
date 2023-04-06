@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update worker and autumndb
+      hash: 7aa61e1e4c2eaec0cec33e622467fc3614f53734
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Josh Bowling
+      nested: []
+  version: 6.8.6
+  title: ""
+  date: 2023-04-06T01:57:16.097Z
+- commits:
     - subject: Generate keys for unit tests
       hash: 4ca4cf009589a0cbf55e4bb80ed2a7eb7e4cccd7
       body: ""

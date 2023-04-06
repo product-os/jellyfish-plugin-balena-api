@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.8.6 - 2023-04-06
+
+* Update worker and autumndb [Josh Bowling]
+
 ## 6.8.5 - 2023-04-04
 
 * Generate keys for unit tests [Josh Bowling]
