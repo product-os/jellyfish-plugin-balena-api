@@ -1,4 +1,16 @@
 - commits:
+    - subject: Bump internal dependencies
+      hash: c0810e1ddafee0a42bc5867b1fd393a95a569a2f
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Josh Bowling
+      nested: []
+  version: 6.8.7
+  title: ""
+  date: 2023-08-12T08:13:54.606Z
+- commits:
     - subject: Update worker and autumndb
       hash: 7aa61e1e4c2eaec0cec33e622467fc3614f53734
       body: ""

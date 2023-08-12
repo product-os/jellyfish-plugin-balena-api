@@ -4,6 +4,10 @@
 
 ## 1.0.1 - 2021-07-09
 
+## 6.8.7 - 2023-08-12
+
+* Bump internal dependencies [Josh Bowling]
+
 ## 6.8.6 - 2023-04-06
 
 * Update worker and autumndb [Josh Bowling]
